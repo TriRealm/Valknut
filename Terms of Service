@@ -1,1 +1,60 @@
+Terms of Service for Valknut
 
+Effective Date: 18/09/2025
+Last Updated: 18/09/2025
+
+1. Overview
+
+Valknut is a moderation and utility bot for Discord. It provides tools for server administrators to manage their communities, including moderation actions, automated announcements, and customizable configurations.
+
+By inviting or using Valknut, you agree to these Terms of Service.
+
+2. Features
+
+Moderation: ban, tempban (with expiry), global ban, and lockdown.
+
+Announcements: Twitch live notifications with updated titles/games.
+
+Anti-Raid / Anti-Spam: message similarity detection and configurable spam prevention.
+
+Configuration: per-guild settings for moderation, spam filters, and announcements.
+
+Logging: optional mod-logs for bans, tempbans, and actions taken by the bot.
+
+3. Data Usage
+
+Valknut does not store personal user data.
+The bot only stores:
+
+Guild configurations (roles, channels, settings).
+
+Temporary technical data (user IDs, timestamps for tempbans, or anti-spam checks).
+
+Data is deleted automatically once it is no longer needed (e.g., after a ban expires).
+
+The bot never logs, shares, or forwards private Direct Messages.
+
+4. Responsibilities
+
+Server Owners/Admins: You are responsible for configuring the bot in your server.
+
+Users: By interacting with the bot, you agree not to abuse its commands or attempt to circumvent its restrictions.
+
+5. Limitations
+
+The bot is provided “as is” without warranties of any kind.
+
+The bot may be unavailable during updates, restarts, or outages.
+
+Abuse of the bot or attempts to bypass Discord’s Terms of Service may result in removal from servers.
+
+6. Compliance
+
+Valknut adheres to the Discord Developer Terms of Service
+ and Discord Guidelines
+.
+
+7. Contact
+
+If you have questions about this Terms of Service, contact the bot developers at:
+Email: trirealm.business@gmail.com / Discord Username: TriRealm
