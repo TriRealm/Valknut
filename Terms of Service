@@ -32,7 +32,7 @@ Temporary technical data (user IDs, timestamps for tempbans, or anti-spam checks
 
 Data is deleted automatically once it is no longer needed (e.g., after a ban expires).
 
-The bot never logs, shares, or forwards private Direct Messages.
+The bot does not read OR Acknowledge private Direct Messages sent to it & it never logs, shares, or forwards private Direct Messages.
 
 4. Responsibilities
 
@@ -49,6 +49,8 @@ The bot may be unavailable during updates, restarts, or outages.
 Abuse of the bot or attempts to bypass Discord’s Terms of Service may result in removal from servers.
 
 6. Compliance
+
+Terms of Service is subject to update as needs arise for any future implementation of new features.
 
 Valknut adheres to the Discord Developer Terms of Service
  and Discord Guidelines
