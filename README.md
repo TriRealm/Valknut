@@ -26,7 +26,6 @@
   Designed to keep servers safe while ensuring fair control over moderation actions.
 
 ---
----
 
 ## ⚙️ /config Command Overview
 
@@ -101,10 +100,10 @@
 - **Purpose:** Display all roles currently protected in this guild.  
 - **Usage:** `/config roleprotect list`  
 - **Example Output:**
-🛡️ Protected Roles
-@Owner
-@Admin
-@Moderator
+- 🛡️ Protected Roles
+- @Owner
+- @Admin
+- @Moderator
 ---
 
 ## ⚔️ Valknut General/Moderation Commands Overview
