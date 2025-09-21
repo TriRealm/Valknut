@@ -1,6 +1,6 @@
 # Valknut 🛡️
 
-![Discord](https://img.shields.io/discord/000000000000000000?color=7289DA&label=Discord)
+![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Discord)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
