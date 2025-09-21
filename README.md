@@ -47,3 +47,6 @@
 
 # Configure 18+ filtering
 /config 18plus true
+
+# View moderation logs
+/modlogs
