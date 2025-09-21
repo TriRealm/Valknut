@@ -2,7 +2,7 @@
 
 ![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Discord)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-0.0.9-blue)
 
 **Valknut** is a specialized Discord moderation bot, built to protect communities from ban-evading users and maintain safe spaces across mutual servers. Originally designed for a group of closely-knit communities, Valknut ensures problematic users cannot disrupt your servers.
 
