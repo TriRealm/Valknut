@@ -26,21 +26,95 @@
   Designed to keep servers safe while ensuring fair control over moderation actions.
 
 ---
+---
 
-## ⚡ Commands Overview
+## ⚙️ /config Command Overview
 
-## ⚔️ Valknut Commands Overview
+| Subcommand / Option | Permissions | Description |
+|--------------------|------------|-------------|
+| `/config raidlogs <channel>` | **Administrator** | Sets the channel where Raid Mode logs will be sent. |
+| `/config modlogs <channel>` | **Administrator** | Sets the channel where moderation logs will be sent. |
+| `/config antispam` | **Administrator** | Configure the anti-spam system. |
+| `/config antiraid` | **Administrator** | Configure the automatic anti-raid system. |
+| `/config 18plus_server <enabled>` | **Administrator** | Enable or disable 18+ server mode for this guild. |
+| `/config invite <url>` | **Administrator** | Set the permanent Discord invite link used in tempban messages. |
+| `/config globalcommands <enabled>` | **Administrator** | Enable or disable participation in the global command system. |
+| `/config roleprotect add <role>` | **Administrator** | Add a role to the protected roles list. |
+| `/config roleprotect delete <role>` | **Administrator** | Remove a role from the protected roles list. |
+| `/config roleprotect list` | **Administrator** | List all protected roles in this guild. |
+
+---
+
+## 📖 "/Config" Command Details
+
+### `/config raidlogs <channel>`
+- **Purpose:** Set the text channel where Raid Mode logs will be sent.  
+- **Usage:** `/config raidlogs #raid-logs`  
+- **Note:** The bot only logs raid events to this channel after it’s configured.
+
+### `/config modlogs <channel>`
+- **Purpose:** Set the text channel where moderation logs (bans, kicks, role protection changes, etc.) will be sent.  
+- **Usage:** `/config modlogs #mod-logs`  
+
+### `/config antispam`
+- **Purpose:** Configure the anti-spam system.  
+- **Options:**
+  - `maxmessages` – Number of messages to store in memory (0–20). 0 disables.  
+  - `threshold` – How many similar messages trigger spam detection (0–20).  
+  - `similarity` – Similarity threshold between messages (0.1–1.0, default 0.8).  
+  - `duration` – How long messages are kept in memory (seconds, 5–300).  
+- **Example:** `/config antispam maxmessages 10 threshold 3 similarity 0.85 duration 60`  
+
+### `/config antiraid`
+- **Purpose:** Configure automatic anti-raid settings.  
+- **Options:**
+  - `joins` – Number of joins in the window that triggers raid mode (0 = disable).  
+  - `window` – Time window in seconds (5–300).  
+  - `duration` – How long raid mode stays active (e.g., 30s, 10m, 1h, 1d).  
+- **Example:** `/config antiraid joins 5 window 10 duration 1h`  
+
+### `/config 18plus_server <enabled>`
+- **Purpose:** Mark the guild as 18+ for filtering global bans and other 18+ content.  
+- **Usage:** `/config 18plus_server true` → Enables 18+ mode  
+- **Usage:** `/config 18plus_server false` → Disables 18+ mode  
+
+### `/config invite <url>`
+- **Purpose:** Set a permanent Discord invite link used in temporary ban messages.  
+- **Requirements:** Must start with `https://discord.gg/`.  
+- **Example:** `/config invite https://discord.gg/example`  
+
+### `/config globalcommands <enabled>`
+- **Purpose:** Opt the server in or out of the global command system (global bans, global purges, etc.).  
+- **Usage:** `/config globalcommands true` → Opt-in  
+- **Usage:** `/config globalcommands false` → Opt-out  
+
+### `/config roleprotect add <role>`
+- **Purpose:** Add a role to the protected roles list (staff or owner roles).  
+- **Usage:** `/config roleprotect add @Moderator`  
+- **Notes:** Users with protected roles cannot be banned by Valknut.  
+
+### `/config roleprotect delete <role>`
+- **Purpose:** Remove a role from the protected roles list.  
+- **Usage:** `/config roleprotect delete @Moderator`  
+
+### `/config roleprotect list`
+- **Purpose:** Display all roles currently protected in this guild.  
+- **Usage:** `/config roleprotect list`  
+- **Example Output:**
+🛡️ Protected Roles
+@Owner
+@Admin
+@Moderator
+---
+
+## ⚔️ Valknut General/Moderation Commands Overview
 
 > *Note: Only trusted moderators or creators can use critical commands.*
 
 | Command                                     | Permissions / Role | Description |
 |---------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `/botinfo`                                  | **Everyone**                               | Displays the credits of who made and developed the bot. |
-| `/help`                                     | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Links to the README to help with commands and initial setup. |
-| `/register18plus`                           | **Server Owner** <br> Permission:<br> `Administrator`      | Flags the server as an 18+ community (helps with ban filtering). |
-| `/unregister18plus`                         | **Server Owner** <br> Permission:<br> `Administrator`    | Removes the server from the 18+ communities list. |
-| `/addprotected <TAG ROLE>`                  | **Server Owner** <br> Permission:<br> `Administrator`      | Adds the tagged role to a protected list so members with that role cannot be banned (staff & owner only). |
-| `/removeprotected <TAG ROLE>`               | **Server Owner** <br> Permission:<br> `Administrator`      | Removes the tagged role from the protection list. |
+| `/help`                                     | **Moderator/Staff** <br> Permission:<br> `ban Members` | Links to the README to help with commands and initial setup. |
 | `/guildscan <LIMIT>`                        | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Scans messages across every channel in your server up to the specified limit (max 100,000). Stores only User ID, Channel ID, Message ID, and Guild ID. |
 | `/purgeuser <USER>`                         | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **in your server**. |
 | `/globalpurgeuser <USER>`                   | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
@@ -100,8 +174,6 @@ Displays bot credits and developer information.
 - **True** → Only affects 18+ registered servers (e.g., minors in 18+ servers).  
 - **False** → Affects all servers Valknut is in, no filtering.  
 - Requires tagging the user and providing a reason.
-
----
 
 ## 📥 Usage Example
 
