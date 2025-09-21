@@ -31,6 +31,7 @@
 
 | Subcommand / Option | Permissions | Description |
 |--------------------|------------|-------------|
+| `/applyforglobal` | **Server Owner** <br> Permission:<br> `Administrator` | Apply to get your server enabled for global commands (Global Ban/UnBan & Purge). |
 | `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
 | `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where moderation logs will be sent. |
 | `/config antispam` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the anti-spam system. |
@@ -45,6 +46,10 @@
 ---
 
 ## 📖 "/Config" Command Details
+
+### `/applyforglobal`
+- **Permissions:** Server Owner with `Administrator`  
+- Sends an application for review to enable your server to run Global commands and have them run in your server.
 
 ### `/config raidlogs <channel>`
 - **Purpose:** Set the text channel where Raid Mode logs will be sent.  
