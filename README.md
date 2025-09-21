@@ -134,14 +134,6 @@ Provides a link to this README so users can get set up and see all commands.
 ### `/botinfo`
 Displays bot credits and developer information.
 
-### `/register18plus` / `/unregister18plus`
-- **Permissions:** Server Owner/Admin only  
-- Marks or removes the server as an 18+ community, which helps with filtering users during global bans or unbans.
-
-### `/addprotected <TAG ROLE>` / `/removeprotected <TAG ROLE>`
-- **Permissions:** Server Owner/Admin only  
-- Adds or removes roles to a protected list. Protected roles cannot be banned by Valknut (intended for staff and owner roles).
-
 ### `/guildscan <LIMIT>`
 - **Permissions:** Moderator/Staff with `Manage Messages`  
 - Scans all messages across all channels in your server up to the specified limit (max 100,000).  
