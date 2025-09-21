@@ -31,16 +31,16 @@
 
 | Subcommand / Option | Permissions | Description |
 |--------------------|------------|-------------|
-| `/config raidlogs <channel>` | **Administrator** | Sets the channel where Raid Mode logs will be sent. |
-| `/config modlogs <channel>` | **Administrator** | Sets the channel where moderation logs will be sent. |
-| `/config antispam` | **Administrator** | Configure the anti-spam system. |
-| `/config antiraid` | **Administrator** | Configure the automatic anti-raid system. |
-| `/config 18plus_server <enabled>` | **Administrator** | Enable or disable 18+ server mode for this guild. |
-| `/config invite <url>` | **Administrator** | Set the permanent Discord invite link used in tempban messages. |
-| `/config globalcommands <enabled>` | **Administrator** | Enable or disable participation in the global command system. |
-| `/config roleprotect add <role>` | **Administrator** | Add a role to the protected roles list. |
-| `/config roleprotect delete <role>` | **Administrator** | Remove a role from the protected roles list. |
-| `/config roleprotect list` | **Administrator** | List all protected roles in this guild. |
+| `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
+| `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where moderation logs will be sent. |
+| `/config antispam` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the anti-spam system. |
+| `/config antiraid` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the automatic anti-raid system. |
+| `/config 18plus_server <enabled>` | **Server Owner** <br> Permission:<br> `Administrator` | Enable or disable 18+ server mode for this guild. |
+| `/config invite <url>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the permanent Discord invite link used in tempban messages. |
+| `/config globalcommands <enabled>` | **Server Owner** <br> Permission:<br> `Administrator` | Enable or disable participation in the global command system. |
+| `/config roleprotect add <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Add a role to the protected roles list. |
+| `/config roleprotect delete <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Remove a role from the protected roles list. |
+| `/config roleprotect list` | **Server Owner** <br> Permission:<br> `Administrator` | List all protected roles in this guild. |
 
 ---
 
