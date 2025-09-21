@@ -37,10 +37,10 @@
 |---------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `/help`                                     | Everyone                               | Links to the README to help with commands and initial setup. |
 | `/botinfo`                                  | Everyone                               | Displays the credits of who made and developed the bot. |
-| `/register18plus`                           | Server Owner <br> Permission: `Administaitor`      | Flags the server as an 18+ community (helps with ban filtering). |
-| `/unregister18plus`                         | Server Owner <br> Permission: `Administaitor`    | Removes the server from the 18+ communities list. |
-| `/addprotected <TAG ROLE>`                  | Server Owner <br> Permission: `Administaitor`      | Adds the tagged role to a protected list so members with that role cannot be banned (staff & owner only). |
-| `/removeprotected <TAG ROLE>`               | Server Owner <br> Permission: `Administaitor`      | Removes the tagged role from the protection list. |
+| `/register18plus`                           | Server Owner <br> Permission: `Administrator`      | Flags the server as an 18+ community (helps with ban filtering). |
+| `/unregister18plus`                         | Server Owner <br> Permission: `Administrator`    | Removes the server from the 18+ communities list. |
+| `/addprotected <TAG ROLE>`                  | Server Owner <br> Permission: `Administrator`      | Adds the tagged role to a protected list so members with that role cannot be banned (staff & owner only). |
+| `/removeprotected <TAG ROLE>`               | Server Owner <br> Permission: `Administrator`      | Removes the tagged role from the protection list. |
 | `/guildscan <LIMIT>`                        | Moderator/Staff <br> Permission: `Manage Messages` | Scans messages across every channel in your server up to the specified limit (max 100,000). Stores only User ID, Channel ID, Message ID, and Guild ID. |
 | `/purgeuser <USER>`                         | Moderator/Staff <br> Permission: `Manage Messages` | Deletes every message logged by Valknut from the target user **in your server**. |
 | `/globalpurgeuser <USER>`                   | Moderator/Staff <br> Permission: `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
