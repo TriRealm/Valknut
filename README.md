@@ -99,11 +99,11 @@
 ### `/config roleprotect list`
 - **Purpose:** Display all roles currently protected in this guild.  
 - **Usage:** `/config roleprotect list`  
-- **Example Output:**
-- 🛡️ Protected Roles
-- @Owner
-- @Admin
-- @Moderator
+- **Example Output:**<br>
+`🛡️ Protected Roles:<br>`
+`- @Owner`
+`- @Admin`
+`- @Moderator`
 ---
 
 ## ⚔️ Valknut General/Moderation Commands Overview
