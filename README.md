@@ -31,8 +31,8 @@
 
 | Command                 | Description                                                                 | Rank to Use            
 |-------------------------|-----------------------------------------------------------------------------|-----------------------------
-| `/gonefromall <user>`   | Remove the target user from all mutual servers (ban evasion control).       | Moderator \n (Ban.Members Permission Needed)
-| `/config`               | Configure trusted roles, 18+ filtering, and moderation protections.         | Server Owner  \n (Administrator Permission Needed)
+| `/gonefromall <user>`   | Remove the target user from all mutual servers (ban evasion control).       | Moderator <br>(Ban.Members Permission Needed)
+| `/config`               | Configure trusted roles, 18+ filtering, and moderation protections.         | Server Owner <br>(Administrator Permission Needed)
 | `/modlogs`              | View actions taken by the bot in a server for transparency and audit.       |
 
 > *Note: Only trusted moderators or creators can use critical commands.*
