@@ -29,13 +29,77 @@
 
 ## ⚡ Commands Overview
 
-| Command                 | Description                                                                 | Rank to Use            
-|-------------------------|-----------------------------------------------------------------------------|-----------------------------
-| `/gonefromall <user>`   | Remove the target user from all mutual servers (ban evasion control).       | Moderator <br>(Ban.Members Permission Needed)
-| `/config`               | Configure trusted roles, 18+ filtering, and moderation protections.         | Server Owner <br>(Administrator Permission Needed)
-| `/modlogs`              | View actions taken by the bot in a server for transparency and audit.       |
+## ⚔️ Valknut Commands Overview
 
 > *Note: Only trusted moderators or creators can use critical commands.*
+
+| Command                                     | Permissions / Role | Description |
+|---------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/help`                                     | Everyone                               | Links to the README to help with commands and initial setup. |
+| `/botinfo`                                  | Everyone                               | Displays the credits of who made and developed the bot. |
+| `/register18plus`                           | Server Owner/Admin                     | Flags the server as an 18+ community (helps with ban filtering). |
+| `/unregister18plus`                         | Server Owner/Admin                     | Removes the server from the 18+ communities list. |
+| `/addprotected <TAG ROLE>`                  | Server Owner/Admin                     | Adds the tagged role to a protected list so members with that role cannot be banned (staff & owner only). |
+| `/removeprotected <TAG ROLE>`               | Server Owner/Admin                     | Removes the tagged role from the protection list. |
+| `/guildscan <LIMIT>`                        | Moderator/Staff with `Manage Messages` | Scans messages across every channel in your server up to the specified limit (max 100,000). Stores only User ID, Channel ID, Message ID, and Guild ID. |
+| `/purgeuser <USER>`                         | Moderator/Staff with `Manage Messages` | Deletes every message logged by Valknut from the target user **in your server**. |
+| `/globalpurgeuser <USER>`                   | Moderator/Staff with `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
+| `/ban <USER> <REASON>`                      | Moderator/Staff with `Ban Members`     | Locally bans a user in your server. Requires tagging the user and providing a reason. |
+| `/unban <USER> <REASON>`                    | Moderator/Staff with `Ban Members`     | Locally un-bans a user in your server. Requires tagging the user and providing a reason. |
+| `/kick <USER> <REASON>`                     | Moderator/Staff with `Ban Members`     | Locally kicks a user from your server. Requires tagging the user and providing a reason. |
+| `/modcomment <VIEW/ADD/DELETE/EDIT> <USER>` | Moderator/Staff with `Ban Members`     | Manages global notes on a user: VIEW existing comments, ADD a comment, DELETE a comment, EDIT an existing comment. |
+| `/globalban <USER> <REASON> <True/False>`   | Moderator/Staff with `Ban Members`     | Globally bans a user in all servers Valknut is in. True = bans only in 18+ registered servers; False = bans in all servers. |
+| `/globalunban <USER> <REASON> <True/False>` | Moderator/Staff with `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
+
+---
+
+## 📖 Command Details
+
+### `/help`
+Provides a link to this README so users can get set up and see all commands.
+
+### `/botinfo`
+Displays bot credits and developer information.
+
+### `/register18plus` / `/unregister18plus`
+- **Permissions:** Server Owner/Admin only  
+- Marks or removes the server as an 18+ community, which helps with filtering users during global bans or unbans.
+
+### `/addprotected <TAG ROLE>` / `/removeprotected <TAG ROLE>`
+- **Permissions:** Server Owner/Admin only  
+- Adds or removes roles to a protected list. Protected roles cannot be banned by Valknut (intended for staff and owner roles).
+
+### `/guildscan <LIMIT>`
+- **Permissions:** Moderator/Staff with `Manage Messages`  
+- Scans all messages across all channels in your server up to the specified limit (max 100,000).  
+- **Stored data:** User ID, Channel ID, Message ID, Guild ID.  
+- **Note:** No message content is logged. Useful for purge commands exceeding the 200-message limit most bots have.
+
+### `/purgeuser <USER>` / `/globalpurgeuser <USER>`
+- **Permissions:** Moderator/Staff with `Manage Messages`  
+- Deletes every message logged by Valknut from the target user.  
+- `/purgeuser` → in your server only.  
+- `/globalpurgeuser` → across all servers Valknut is in.
+
+### `/ban <USER> <REASON>` / `/unban <USER> <REASON>` / `/kick <USER> <REASON>`
+- **Permissions:** Moderator/Staff with `Ban Members`  
+- Locally bans, un-bans, or kicks a user from your server.  
+- Requires tagging the user and providing a reason.
+
+### `/modcomment <VIEW/ADD/DELETE/EDIT> <USER>`
+- **Permissions:** Moderator/Staff with `Ban Members`  
+- Manages global notes for users.  
+  - `VIEW` → View comments on a user  
+  - `ADD` → Add a comment  
+  - `DELETE` → Delete a comment  
+  - `EDIT` → Edit an existing comment
+
+### `/globalban <USER> <REASON> <True/False>` / `/globalunban <USER> <REASON> <True/False>`
+- **Permissions:** Moderator/Staff with `Ban Members`  
+- Bans or un-bans a user globally across all servers Valknut is in.  
+- **True** → Only affects 18+ registered servers (e.g., minors in 18+ servers).  
+- **False** → Affects all servers Valknut is in, no filtering.  
+- Requires tagging the user and providing a reason.
 
 ---
 
