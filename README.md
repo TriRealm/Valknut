@@ -35,8 +35,8 @@
 
 | Command                                     | Permissions / Role | Description |
 |---------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `/help`                                     | **Everyone**                               | Links to the README to help with commands and initial setup. |
 | `/botinfo`                                  | **Everyone**                               | Displays the credits of who made and developed the bot. |
+| `/help`                                     | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Links to the README to help with commands and initial setup. |
 | `/register18plus`                           | **Server Owner** <br> Permission:<br> `Administrator`      | Flags the server as an 18+ community (helps with ban filtering). |
 | `/unregister18plus`                         | **Server Owner** <br> Permission:<br> `Administrator`    | Removes the server from the 18+ communities list. |
 | `/addprotected <TAG ROLE>`                  | **Server Owner** <br> Permission:<br> `Administrator`      | Adds the tagged role to a protected list so members with that role cannot be banned (staff & owner only). |
@@ -46,7 +46,7 @@
 | `/globalpurgeuser <USER>`                   | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
 | `/ban <USER> <REASON>`                      | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally bans a user in your server. Requires tagging the user and providing a reason. |
 | `/unban <USER> <REASON>`                    | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally un-bans a user in your server. Requires tagging the user and providing a reason. |
-| `/kick <USER> <REASON>`                     | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally kicks a user from your server. Requires tagging the user and providing a reason. |
+| `/kick <USER> <REASON>`                     | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Locally kicks a user from your server. Requires tagging the user and providing a reason. |
 | `/modcomment <VIEW/ADD/DELETE/EDIT> <USER>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Manages global notes on a user: VIEW existing comments, ADD a comment, DELETE a comment, EDIT an existing comment. |
 | `/globalban <USER> <REASON> <True/False>`   | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally bans a user in all servers Valknut is in. True = bans only in 18+ registered servers; False = bans in all servers. |
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
