@@ -177,8 +177,8 @@ Displays bot credits and developer information.
 ## 📥 Usage Example
 
 ```bash
-# Remove a user from all mutual servers
-/gonefromall @troublesomeUser
+# Remove a user from all mutual servers with the reason "GFX/Scam Artist"
+/globalban @troublesomeUser GFX/Scam Artist
 
 # Configure 18+ filtering
 /config 18plus true
