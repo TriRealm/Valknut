@@ -37,7 +37,7 @@
 |---------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `/help`                                     | Everyone                               | Links to the README to help with commands and initial setup. |
 | `/botinfo`                                  | Everyone                               | Displays the credits of who made and developed the bot. |
-| `/register18plus`                           | Server Owner with `Administaitor`      | Flags the server as an 18+ community (helps with ban filtering). |
+| `/register18plus`                           | Server Owner <br> Permission: `Administaitor`      | Flags the server as an 18+ community (helps with ban filtering). |
 | `/unregister18plus`                         | Server Owner with `Administaitor`      | Removes the server from the 18+ communities list. |
 | `/addprotected <TAG ROLE>`                  | Server Owner with `Administaitor`      | Adds the tagged role to a protected list so members with that role cannot be banned (staff & owner only). |
 | `/removeprotected <TAG ROLE>`               | Server Owner with `Administaitor`      | Removes the tagged role from the protection list. |
