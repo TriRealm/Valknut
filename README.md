@@ -129,7 +129,8 @@
 | `/modcomment <VIEW/ADD/DELETE/EDIT> <USER>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Manages global notes on a user: VIEW existing comments, ADD a comment, DELETE a comment, EDIT an existing comment. |
 | `/globalban <USER> <REASON> <True/False>`   | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally bans a user in all servers Valknut is in. True = bans only in 18+ registered servers; False = bans in all servers. |
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
-| `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed & Manual Disables |
+| `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed or with a `false` value in the command. |
+| `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Guild`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
 
 ---
 
@@ -158,6 +159,12 @@ Displays bot credits and developer information.
 - Locally bans, un-bans, or kicks a user from your server.  
 - Requires tagging the user and providing a reason.
 
+### `/tempban <USER> <DURATION> <REASON>`
+- **Permissions:** Moderator/Staff with `Ban Members`  
+- Locally & Temporarily bans a user from your server for the desired amount of time.  
+- Requires tagging the user and providing a reason.
+- `duration` – How long the user is banned for (e.g., 30s, 10m, 1h, 1d).
+
 ### `/modcomment <VIEW/ADD/DELETE/EDIT> <USER>`
 - **Permissions:** Moderator/Staff with `Ban Members`  
 - Manages global notes for users.  
@@ -172,6 +179,26 @@ Displays bot credits and developer information.
 - **True** → Only affects 18+ registered servers (e.g., minors in 18+ servers).  
 - **False** → Affects all servers Valknut is in, no filtering.  
 - Requires tagging the user and providing a reason.
+
+### `/raidmode <True/False> <DURATION>`
+- **Permissions:** Moderator/Staff with `Kick Members`  
+- Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked.  
+- Requires tagging the user and providing a reason.
+- `duration` – How long raid mode stays active (e.g., 30s, 10m, 1h, 1d).
+
+### `/twitch <ADD/REMOVE/EDIT/LIST> <USERNAME> <CHANNEL> <MESSAGE>`
+- **Permissions:** Moderator/Staff with `Manage Guild`  
+- Live Notifications from Twitch users in Channels with Custom Messages.  
+  - `ADD` → Add a new Twitch stream to get notificaions/embed for.
+  - `REMOVE` → Remove a Twitch stream you are already getting notified for.
+  - `EDIT` → Edit the notification settings of a channel
+  - `LIST` → List all followed channels and their settings
+
+- Flags
+  - `USERNAME` → The Twitch Username of the channel you want.
+  - `CHANNEL` → The Channel you want the notifications being posted to.
+  - `MESSAGE` → Custom message to go with the embed (Supports Tagging and Server Emotes).
+
 
 ## 📥 Usage Example
 
