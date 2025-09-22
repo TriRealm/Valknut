@@ -123,11 +123,13 @@
 | `/purgeuser <USER>`                         | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **in your server**. |
 | `/globalpurgeuser <USER>`                   | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
 | `/ban <USER> <REASON>`                      | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally bans a user in your server. Requires tagging the user and providing a reason. |
+| `/tempban <USER> <DURATION> <REASON>`                      | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally & Temporarily bans a user in your server. Requires tagging the user and providing a reason. |
 | `/unban <USER> <REASON>`                    | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally un-bans a user in your server. Requires tagging the user and providing a reason. |
 | `/kick <USER> <REASON>`                     | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Locally kicks a user from your server. Requires tagging the user and providing a reason. |
 | `/modcomment <VIEW/ADD/DELETE/EDIT> <USER>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Manages global notes on a user: VIEW existing comments, ADD a comment, DELETE a comment, EDIT an existing comment. |
 | `/globalban <USER> <REASON> <True/False>`   | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally bans a user in all servers Valknut is in. True = bans only in 18+ registered servers; False = bans in all servers. |
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
+| `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed & Manual Disables |
 
 ---
 
