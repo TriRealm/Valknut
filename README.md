@@ -35,6 +35,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | Subcommand / Option | Permissions | Description |
 |--------------------|------------|-------------|
 | `/applyforglobal` | **Server Owner** <br> Permission:<br> `Administrator` | Apply to get your server enabled for global commands (Global Ban/UnBan & Purge). |
+| `/catchupbans <all/global/18plus>` | **Server Owner** <br> Permission:<br> `Administrator` | Applies all Global Bans from the bots prior logs with the desired filter they set. |
 | `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
 | `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where moderation logs will be sent. |
 | `/config antispam` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the anti-spam system. |
@@ -54,16 +55,29 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 - **Permissions:** Server Owner with `Administrator`  
 - Sends an application for review to enable your server to run Global commands and have them run in your server.
 
+### `/catchupbans <all/global/18plus>`
+- **Permissions:** Server Owner with `Administrator`  
+- Applies all Global Bans from the bots prior logs with the desired filter they set.
+- **Usage:** `/catchupbans 18plus`  - Only runs the bans from logs that have the 18plus filter as `true`
+- **Options:**
+  - `all` – Runs **ALL** Global Bans the bot has previously ran to catch the server up with prior bans.  
+  - `global` – Runs Only Global Bans Where the **18plus flag is `false`**.  
+  - `18plus` – Runs Only Global Bans Where the **18plus flag is `true`**.
+  
+
 ### `/config raidlogs <channel>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Set the text channel where Raid Mode logs will be sent.  
 - **Usage:** `/config raidlogs #raid-logs`  
 - **Note:** The bot only logs raid events to this channel after it’s configured.
 
 ### `/config modlogs <channel>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Set the text channel where moderation logs (bans, kicks, role protection changes, etc.) will be sent.  
 - **Usage:** `/config modlogs #mod-logs`  
 
 ### `/config antispam`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Configure the anti-spam system.  
 - **Options:**
   - `maxmessages` – Number of messages to store in memory (0–20). 0 disables.  
@@ -73,6 +87,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 - **Example:** `/config antispam maxmessages 10 threshold 3 similarity 0.85 duration 60`  
 
 ### `/config antiraid`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Configure automatic anti-raid settings.  
 - **Options:**
   - `joins` – Number of joins in the window that triggers raid mode (0 = disable).  
@@ -81,30 +96,36 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 - **Example:** `/config antiraid joins 5 window 10 duration 1h`  
 
 ### `/config 18plus_server <enabled>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Mark the guild as 18+ for filtering global bans and other 18+ content.  
 - **Usage:** `/config 18plus_server true` → Enables 18+ mode  
 - **Usage:** `/config 18plus_server false` → Disables 18+ mode  
 
 ### `/config invite <url>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Set a permanent Discord invite link used in temporary ban messages.  
 - **Requirements:** Must start with `https://discord.gg/`.  
 - **Example:** `/config invite https://discord.gg/example`  
 
 ### `/config globalcommands <enabled>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Opt the server in or out of the global command system (global bans, global purges, etc.).  
 - **Usage:** `/config globalcommands true` → Opt-in  
 - **Usage:** `/config globalcommands false` → Opt-out  
 
 ### `/config roleprotect add <role>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Add a role to the protected roles list (staff or owner roles).  
 - **Usage:** `/config roleprotect add @Moderator`  
 - **Notes:** Users with protected roles cannot be banned by Valknut.  
 
 ### `/config roleprotect delete <role>`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Remove a role from the protected roles list.  
 - **Usage:** `/config roleprotect delete @Moderator`  
 
 ### `/config roleprotect list`
+- **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Display all roles currently protected in this guild.  
 - **Usage:** `/config roleprotect list`  
 - **Example Output:**<br>
