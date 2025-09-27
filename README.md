@@ -81,7 +81,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 ### `/config systemlogs <channel>`
 - **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications).  
-- **Usage:** `/config modlogs #systemlogs`  
+- **Usage:** `/config systemlogs #system-logs`  
 
 ### `/config antispam`
 - **Permissions:** Server Owner with `Administrator` 
