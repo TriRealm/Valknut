@@ -37,9 +37,11 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/applyforglobal` | **Server Owner** <br> Permission:<br> `Administrator` | Apply to get your server enabled for global commands (Global Ban/UnBan & Purge). |
 | `/catchupbans <all/global/18plus>` | **Server Owner** <br> Permission:<br> `Administrator` | Applies all Global Bans from the bots prior logs with the desired filter they set. |
 | `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
-| `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where moderation logs will be sent. |
+| `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Moderation logs will be sent. |
+| `/config systemlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications) |
 | `/config antispam` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the anti-spam system. |
 | `/config antiraid` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the automatic anti-raid system. |
+| `/config autokick <role> <time> <reason>` | **Server Owner** <br> Permission:<br> `Administrator` | System that auto-kicks users with the desired role after the set time! Intergrated with other bots that have a verification process but lock the auto-kick behind a paywall. (eg. Melpo Verifier) |
 | `/config 18plus_server <enabled>` | **Server Owner** <br> Permission:<br> `Administrator` | Enable or disable 18+ server mode for this guild. |
 | `/config invite <url>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the permanent Discord invite link used in tempban messages. |
 | `/config globalcommands <enabled>` | **Server Owner** <br> Permission:<br> `Administrator` | Enable or disable participation in the global command system. |
@@ -74,7 +76,12 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 ### `/config modlogs <channel>`
 - **Permissions:** Server Owner with `Administrator` 
 - **Purpose:** Set the text channel where moderation logs (bans, kicks, role protection changes, etc.) will be sent.  
-- **Usage:** `/config modlogs #mod-logs`  
+- **Usage:** `/config modlogs #mod-logs`
+
+### `/config systemlogs <channel>`
+- **Permissions:** Server Owner with `Administrator` 
+- **Purpose:** Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications).  
+- **Usage:** `/config modlogs #systemlogs`  
 
 ### `/config antispam`
 - **Permissions:** Server Owner with `Administrator` 
@@ -93,7 +100,16 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
   - `joins` – Number of joins in the window that triggers raid mode (0 = disable).  
   - `window` – Time window in seconds (5–300).  
   - `duration` – How long raid mode stays active (e.g., 30s, 10m, 1h, 1d).  
-- **Example:** `/config antiraid joins 5 window 10 duration 1h`  
+- **Example:** `/config antiraid joins 5 window 10 duration 1h`
+
+### `/config autokick`
+- **Permissions:** Server Owner with `Administrator` 
+- **Purpose:** Configure the anti-spam system.  
+- **Options:**
+  - `role` – The role needed to be monitored and timed.  
+  - `time` – Duration in **Minutes** - `5760` = `4 Days` - MAX = `10080` - `7 Days` .  
+  - `reason` – The Reason/Message used for the kick which will be logged and seen in the `Audit Log` of your server.    
+- **Example:** `/config autokick @unverified 5760 [Time-out] Unverified after 4 days.`   
 
 ### `/config 18plus_server <enabled>`
 - **Permissions:** Server Owner with `Administrator` 
@@ -155,6 +171,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
 | `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed or with a `false` value in the command. |
 | `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Guild`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
+| `/reactionrole <create/edit/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Guild`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
 
 ---
 
@@ -215,13 +232,63 @@ Displays bot credits and developer information.
 - Live Notifications from Twitch users in Channels with Custom Messages.  
   - `ADD` → Add a new Twitch stream to get notificaions/embed for.
   - `REMOVE` → Remove a Twitch stream you are already getting notified for.
-  - `EDIT` → Edit the notification settings of a channel
-  - `LIST` → List all followed channels and their settings
+  - `EDIT` → Edit the notification settings of a channel.
+  - `LIST` → List all followed channels and their settings.
 
 - Flags
   - `USERNAME` → The Twitch Username of the channel you want.
   - `CHANNEL` → The Channel you want the notifications being posted to.
   - `MESSAGE` → Custom message to go with the embed (Supports Tagging and Server Emotes).
+ 
+### `/reactionrole <CREATE/EDIT/LIST/ADDROLE/REMOVEROLE> <MESSAGEID> <EMOJI> <ROLE> <DISPLAYNAME> <MAXROLES> <REQUIREDROLE> <EXCLUDEDROLE>`
+- **Permissions:** Moderator/Staff with `Manage Guild`  
+- Allows you to create and manage roles that users can assign by reacting to a message dynamically.
+
+---
+
+#### Subcommands & Parameters:
+
+- **`CREATE`** → Create a new reaction role message.
+  - `content` → The message content that users will see.  
+  - `maxroles` *(optional)* → Maximum number of roles a user can select.  
+  - `requiredrole` *(optional)* → Role a user must have to react.  
+  - `excludedrole` *(optional)* → Role a user cannot have to react.
+
+- **`EDIT`** → Edit an existing reaction role message.
+  - `messageid` → The ID of the message to edit.  
+  - `content` *(optional)* → New message content.  
+  - `maxroles` *(optional)* → Update maximum roles a user can select.  
+  - `requiredrole` *(optional)* → Update required role for reacting.  
+  - `excludedrole` *(optional)* → Update excluded role for reacting.
+
+- **`LIST`** → List all roles for a reaction role message.
+  - `messageid` → The ID of the reaction role message.  
+  - **Output:** Displays all assigned emojis, roles, and display names.
+
+- **`ADDROLE`** → Add a role to an existing reaction role message.
+  - `messageid` → The ID of the message to add the role to.  
+  - `role` → The role to assign.  
+  - `emoji` → The emoji to react with for this role.  
+  - `displayname` *(optional)* → Custom display name for the role.
+
+- **`REMOVEROLE`** → Remove a role from a reaction role message.
+  - `messageid` → The ID of the message to remove the role from.  
+  - `emoji` → The emoji corresponding to the role to remove.
+
+---
+
+#### Notes:
+
+- **MessageID:** The ID of the message in the channel containing the reaction roles.  
+- **Emoji:** The emoji that users will react with to receive a role.  
+- **Role:** The Discord role associated with the reaction.  
+- **DisplayName:** Optional custom display name shown in the message.  
+- **MaxRoles:** Limits how many roles a user can select from this reaction role message.  
+- **RequiredRole:** Users must have this role to react.  
+- **ExcludedRole:** Users with this role cannot react.  
+
+> ⚠️ **Important:** Reactions are automatically updated when roles are added/removed. The bot will only react with missing emojis and remove reactions for removed roles dynamically.
+
 
 
 ## 📥 Usage Example
