@@ -244,7 +244,7 @@ Displays bot credits and developer information.
 - **Permissions:** Moderator/Staff with `Manage Guild`  
 - Allows you to create and manage roles that users can assign by reacting to a message dynamically.
 
----
+
 
 #### Subcommands & Parameters:
 
@@ -275,8 +275,6 @@ Displays bot credits and developer information.
   - `messageid` → The ID of the message to remove the role from.  
   - `emoji` → The emoji corresponding to the role to remove.
 
----
-
 #### Notes:
 
 - **MessageID:** The ID of the message in the channel containing the reaction roles.  
@@ -288,6 +286,8 @@ Displays bot credits and developer information.
 - **ExcludedRole:** Users with this role cannot react.  
 
 > ⚠️ **Important:** Reactions are automatically updated when roles are added/removed. The bot will only react with missing emojis and remove reactions for removed roles dynamically.
+
+---
 
 
 
