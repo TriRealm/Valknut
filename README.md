@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/Version-0.9.5-blue)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
-[![Server Count](https://top.gg/api/widget/servers/1373066520397348864.png)](https://top.gg/bot/1373066520397348864)
+[![🤖 Guilds](https://img.shields.io/endpoint?url=http://212.132.164.138.com:4500/guild-count&label=🤖%20Guilds&color=8755D6&style=for-the-badge)](https://top.gg/bot/1373066520397348864)
 ![Discord](https://img.shields.io/discord/1373066520397348864?color=7289DA&label=Discord)
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
 
