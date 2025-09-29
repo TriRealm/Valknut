@@ -172,7 +172,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
 | `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed or with a `false` value in the command. |
 | `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
-| `/reactionrole <create/edit/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Guild`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
+| `/reactionrole <create/edit/remove/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
 
 ---
 
@@ -242,7 +242,7 @@ Displays bot credits and developer information.
   - `MESSAGE` → Custom message to go with the embed (Supports Tagging and Server Emotes).
  
 ### `/reactionrole <CREATE/EDIT/LIST/ADDROLE/REMOVEROLE> <MESSAGEID> <EMOJI> <ROLE> <DISPLAYNAME> <MAXROLES> <REQUIREDROLE> <EXCLUDEDROLE>`
-- **Permissions:** Moderator/Staff with `Manage Guild`  
+- **Permissions:** Moderator/Staff with `Manage Messages`  
 - Allows you to create and manage roles that users can assign by reacting to a message dynamically.
 
 
@@ -254,6 +254,9 @@ Displays bot credits and developer information.
   - `maxroles` *(optional)* → Maximum number of roles a user can select.  
   - `requiredrole` *(optional)* → Role a user must have to react.  
   - `excludedrole` *(optional)* → Role a user cannot have to react.
+
+- **`REMOVE`** → Create a new reaction role message.
+  - `messageid` → The ID of the message to remove. 
 
 - **`EDIT`** → Edit an existing reaction role message.
   - `messageid` → The ID of the message to edit.  
