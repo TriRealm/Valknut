@@ -171,7 +171,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/globalban <USER> <REASON> <True/False>`   | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally bans a user in all servers Valknut is in. True = bans only in 18+ registered servers; False = bans in all servers. |
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
 | `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed or with a `false` value in the command. |
-| `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Guild`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
+| `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
 | `/reactionrole <create/edit/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Guild`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
 
 ---
@@ -229,7 +229,7 @@ Displays bot credits and developer information.
 - `duration` – How long raid mode stays active (e.g., 30s, 10m, 1h, 1d).
 
 ### `/twitch <ADD/REMOVE/EDIT/LIST> <USERNAME> <CHANNEL> <MESSAGE>`
-- **Permissions:** Moderator/Staff with `Manage Guild`  
+- **Permissions:** Moderator/Staff with `Manage Messages`  
 - Live Notifications from Twitch users in Channels with Custom Messages.  
   - `ADD` → Add a new Twitch stream to get notificaions/embed for.
   - `REMOVE` → Remove a Twitch stream you are already getting notified for.
