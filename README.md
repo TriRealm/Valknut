@@ -1,6 +1,6 @@
 # Valknut 🛡️
 
-![Version](https://img.shields.io/badge/Version-0.9.5-blue)
+![Version](https://img.shields.io/badge/Version-0.9.6-blue)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Developer%20Discord)](https://discord.gg/EvYFUSpbVz)
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
@@ -173,6 +173,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed or with a `false` value in the command. |
 | `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
 | `/reactionrole <create/edit/remove/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
+| `/poll <title> <role> <option1> <option2> <option3> <option4> <option5> <option6> <option7> <option8> <option9> <option10>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create polls and Optionally mention users for notifications and allow to react to the options. |
 
 ---
 
@@ -290,6 +291,13 @@ Displays bot credits and developer information.
 - **ExcludedRole:** Users with this role cannot react.  
 
 > ⚠️ **Important:** Reactions are automatically updated when roles are added/removed. The bot will only react with missing emojis and remove reactions for removed roles dynamically.
+
+### `/poll <title> <role> <option1> <option2> <option3> <option4> <option5> <option6> <option7> <option8> <option9> <option10>`
+- **Permissions:** Moderator/Staff with `Manage Messages`  
+- Create polls and Optionally mention users for notifications and allow to react to the options.  
+  - `TITLE` → Add a title to the poll. EG: What are we playing tonight?
+  - `ROLE` → Add a Role to get pinged when the poll is published.
+  - `OPTION1-OPTION10` → Input the different options/things for users to vote for on the poll.
 
 ---
 
