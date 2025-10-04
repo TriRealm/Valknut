@@ -159,7 +159,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | Command                                     | Permissions / Role | Description |
 |---------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `/botinfo`                                  | **Everyone**                               | Displays the credits of who made and developed the bot. |
-| `/help`                                     | **Moderator/Staff** <br> Permission:<br> `ban Members` | Links to the README to help with commands and initial setup. |
+| `/help`                                     | **Moderator/Staff** <br> Permission:<br> `Ban Members` | Links to the README to help with commands and initial setup. |
 | `/guildscan <LIMIT>`                        | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Scans messages across every channel in your server up to the specified limit (max 100,000). <br>Stores only `User ID`, `Channel ID`, `Message ID`, and `Guild ID`. <br>No Message Content is ever Stored. |
 | `/purgeuser <USER>`                         | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **in your server**. |
 | `/globalpurgeuser <USER>`                   | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
