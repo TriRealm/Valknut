@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/Version-0.9.6-blue)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Developer%20Discord)](https://discord.gg/EvYFUSpbVz)
+[![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Dev%20Discord)](https://discord.gg/EvYFUSpbVz)
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
 [![Banned](https://img.shields.io/badge/Banned%3F-Appeal_Here-FF4D00)](https://forms.gle/Ue5YpRx7rYya7Ast6)
 ![Users](https://img.shields.io/badge/Banned%20Users-24-FA003F)
