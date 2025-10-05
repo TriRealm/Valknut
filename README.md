@@ -5,7 +5,8 @@
 [![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Developer%20Discord)](https://discord.gg/EvYFUSpbVz)
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
 [![Banned](https://img.shields.io/badge/Global%20Banned%3F-Appeal_Here-FF4D00)](https://forms.gle/Ue5YpRx7rYya7Ast6)
-![Users](https://img.shields.io/badge/Banned%20Users-8-FA003F)
+![Users](https://img.shields.io/badge/Banned%20Users-24-FA003F)
+![Guilds](https://img.shields.io/badge/Blocked%20Guilds-0-FA003F)
 
 **Valknut** is a specialized Discord moderation bot, built to protect communities from ban-evading users and maintain safe spaces across mutual servers.
 
