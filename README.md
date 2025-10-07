@@ -52,6 +52,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/config roleprotect add <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Add a role to the protected roles list. |
 | `/config roleprotect delete <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Remove a role from the protected roles list. |
 | `/config roleprotect list` | **Server Owner** <br> Permission:<br> `Administrator` | List all protected roles in this guild. |
+| `/config mute enabled:<true/false> <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Enables/Disables the bot to manage and configure channels for the Mute/Timeout System. |
 
 ---
 
@@ -153,6 +154,15 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 `- @Owner`<br>
 `- @Admin`<br>
 `- @Moderator`<br>
+
+### `/config Mute Enabled:<true/false> <role>`
+- **Permissions:** Server Owner with `Administrator`  
+- Enables/Disables the bot to manage and configure channels for the Mute/Timeout System..
+- **Usage:** `/config mute true @Muted`  - Enabled the Mute/Timeout Functions for the `@Muted` Role
+- **Options:**
+  - `True` – Turns **ON** the system and Makes the bot go through all `CHANNELS` and applies the configured `Mute` role from speaking/typing in channels **(DOESN'T AFFECT VIEWING PERMISSIONS - ALL INHERITED FROM CURRENT ROLES)**.  
+  - `False` – Turns **OFF** the system.  
+  - `Role` – The desired Role you want the bot to manage and apply to channels for the Mute/Timeout.
 ---
 
 ## ⚔️ Valknut General/Moderation Commands Overview
@@ -177,6 +187,8 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
 | `/reactionrole <create/edit/remove/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
 | `/poll <title> <role> <option1> <option2> <option3> <option4> <option5> <option6> <option7> <option8> <option9> <option10>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create polls and Optionally mention users for notifications and allow to react to the options. |
+| `/mute <user> <reason> <duartion>`   | **Moderator/Staff** <br> Permission:<br> `Time Out Members/Moderate Members`     | Allows you to mute/timeout users indefinitely or for a set amount of time IF SET. |
+| `/unmute <user> <reason>`   | **Moderator/Staff** <br> Permission:<br> `Time Out Members/Moderate Members`     | Allows you to un-mute/un-timeout users. |
 
 ---
 
@@ -301,7 +313,13 @@ Displays bot credits and developer information.
   - `TITLE` → Add a title to the poll. EG: What are we playing tonight?
   - `ROLE` → Add a Role to get pinged when the poll is published.
   - `OPTION1-OPTION10` → Input the different options/things for users to vote for on the poll.
-
+ 
+### `/mute <USER> <REASON> <DURATION>` / `/unmute <USER> <REASON>`
+- **Permissions:** Moderator/Staff with `Time Out Members/Moderate Members`  
+- Allows you to mute/timeout OR un-mute/un-timeout users indefinitely or for a set amount of time IF SET. 
+- `USER` → Target of who you want to mute/timeout.
+- `REASON` → Why you're muting/timing this user out.
+- `DURATION` (OPTIONAL) → How long you want to mute/timeout this user, IF left blank it will be indefinite.
 ---
 
 
