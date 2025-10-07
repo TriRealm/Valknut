@@ -12,6 +12,10 @@
 
 Originally designed for a group of closely-knit communities, Valknut ensures problematic users cannot disrupt your servers.
 
+## 📊 Uptime
+![Uptime Status](./uptime.png)
+
+
 ---
 
 ## 🌟 Key Features
