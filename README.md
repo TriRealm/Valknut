@@ -1,6 +1,7 @@
 # Valknut 🛡️
 
 ![Version](https://img.shields.io/badge/Version-0.9.6-blue)
+![Uptime Status](./uptime.png)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Dev%20Discord)](https://discord.gg/EvYFUSpbVz)
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
@@ -11,9 +12,6 @@
 **Valknut** is a specialized Discord moderation bot, built to protect communities from ban-evading users and maintain safe spaces across mutual servers.
 
 Originally designed for a group of closely-knit communities, Valknut ensures problematic users cannot disrupt your servers.
-
-## 📊 Uptime
-![Uptime Status](./uptime.png)
 
 
 ---
