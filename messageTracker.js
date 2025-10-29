@@ -164,7 +164,7 @@ async function fetchPKRobust(message) {
                     if (!avatarURL) avatarURL = senderUser?.displayAvatarURL() || null;
                 } catch { senderTag = 'Unknown User'; }
 
-                const usernameOverride = `${memberName} | via ${senderTag} \n **PK System ID:** \`${systemId}\` \n **User ID:**`;
+                const usernameOverride = `${memberName} | via: \`${senderTag}\` \n **PK System ID:** \`${systemId}\` \n **User ID:**`;
 
                 message.pkMemberAvatarURL = avatarURL;
 
