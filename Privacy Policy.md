@@ -5,22 +5,27 @@
 **Last Updated:** 29/10/2025
 
 ---
-# 1. Overview
+# 1. Overview & Acceptance of Policy
 Valknut is a Discord moderation and utility bot. This Privacy Policy explains what information the bot collects, how it is used, and how it is protected.
 
+By using Valknut, you acknowledge that you have read, understood, and agree to this Privacy Policy and the accompanying [Terms of Service](https://github.com/TriRealm/Valknut/blob/main/Terms%20of%20Service.md)
+
 ---
-
 # 2. Data Collection
-Valknut does not collect or store personal data from users.
 
-The bot only temporarily processes technical information necessary for its features:
+**Valknut does not collect, sell, or permanently store any personal data from users.**
 
-- **Guild configuration data** (roles, channels, and settings chosen by server admins).
-- **Moderation metadata** (user IDs, timestamps for temporary bans, logs of actions taken).
-- **Temporary anti-spam checks** (recent messages used only for spam detection and deleted after expiry).
-- **Temporary message logs via Discord webhooks for moderation purposes by Valknut's Developers** (these logs are stored on Discord and may persist until manually deleted but they are not stored in Valknut’s databases).
+The bot only processes limited technical information necessary to provide its functionality, such as:
 
-The bot does not log or store private Direct Messages.
+**Guild configuration data:** roles, channels, and settings chosen by server administrators.
+
+**Moderation metadata:** user IDs (non-personal/discord identifiers), timestamps, and action logs for moderation features (e.g., tempbans).
+
+**Temporary anti-spam checks:** recent message data, automatically deleted after detection windows expire.
+
+**Temporary moderation webhooks:** Valknut may send message logs via Discord webhooks for moderation purposes. These remain on Discord’s servers until deletion and are not stored by Valknut’s own systems.
+
+**Valknut does not log or access private Direct Messages between users or to the bot itself.**
 
 ---
 # 3. Data Retention
@@ -40,13 +45,15 @@ Since Valknut does not store personal data, no user action is required to reques
 
 ---
 # 6. Compliance
-This Privacy Policy is designed to comply with:
+Valknut operates in compliance with:
 
 [Discord Developer Terms of Service](https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service)
 
 [Discord Community Guidelines](https://discord.com/guidelines)
 
-Privacy Policy is subject to update as needs arise for any future implementation of new features.
+Valknut relies solely on Discord’s API and hosting infrastructure for message delivery and temporary data storage.
+
+This Privacy Policy may be updated as new features or legal requirements arise.
 
 ---
 # 7. Contact
