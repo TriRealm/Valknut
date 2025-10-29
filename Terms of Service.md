@@ -1,5 +1,6 @@
 # Terms of Service for Valknut
 **Effective Date:** 18/09/2025
+
 **Last Updated:** 29/10/2025
 
 ---
