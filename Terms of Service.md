@@ -61,7 +61,7 @@ Abuse of the bot or attempts to bypass Discord’s Terms of Service may result i
 
 Terms of Service is subject to update as needs arise for any future implementation of new features.
 
-Valknut adheres to the Discord Developer Terms of Service and Discord Guidelines.
+Valknut adheres to the [Discord Developer Terms of Service](https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service) and [Discord Guidelines](https://discord.com/guidelines).
 
 ---
 ## Contact
