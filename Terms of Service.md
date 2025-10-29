@@ -12,11 +12,15 @@ You also agree that you will not use this bot maliciously or any of its features
 ---
 ## Features
 
-Moderation: ban, tempban (with expiry), global ban, and lockdown, purge user & global purge user.
-Announcements: Twitch live notifications with updated titles/games.
-Anti-Raid / Anti-Spam: message similarity detection and configurable spam prevention.
-Configuration: per-guild settings for moderation, spam filters, and announcements.
-Logging: optional mod-logs for bans, tempbans, and actions taken by the bot.
+- **Moderation:** ban, tempban (with expiry), global ban, and lockdown, purge user & global purge user.
+
+- **Announcements:** Twitch live notifications with updated titles/games.
+
+- **Anti-Raid / Anti-Spam:** message similarity detection and configurable spam prevention.
+
+- **Configuration:** per-guild settings for moderation, spam filters, and announcements.
+
+- **Logging:** optional message-logs, mod-logs for bans, tempbans, and actions taken by the bot.
 
 ---
 ## Data Usage
@@ -26,6 +30,7 @@ Valknut does not store personal user data.
 The bot only stores:
 
 - Guild configurations (roles, channels, settings).
+
 - Temporary technical data (user IDs, timestamps for tempbans, or anti-spam checks).
 
 Data is deleted automatically once it is no longer needed (e.g., after a ban expires).
@@ -38,19 +43,23 @@ The bot does not read OR acknowledge private Direct Messages sent to it & it nev
 ## Responsibilities
 
 Server Owners/Admins: You are responsible for configuring the bot in your server.
+
 Users: By interacting with the bot, you agree not to abuse its commands or attempt to circumvent its restrictions.
 
 ---
 ## Limitations
 
 The bot is provided “as is” without warranties of any kind.
+
 The bot may be unavailable during updates, restarts, or outages.
+
 Abuse of the bot or attempts to bypass Discord’s Terms of Service may result in removal from servers.
 
 ---
 ## Compliance
 
 Terms of Service is subject to update as needs arise for any future implementation of new features.
+
 Valknut adheres to the Discord Developer Terms of Service and Discord Guidelines.
 
 ---
