@@ -2,11 +2,11 @@ const { WebhookClient, EmbedBuilder } = require('discord.js');
 const { getCollection } = require('../../src/utils/mongo');
 const pk = require('../utils/pluralkit');
 
-const WEBHOOK_URL = 'Discord_Webhook_URL_Here';
+const WEBHOOK_URL = 'Discord_Webhook_URL_Here'; //Replace with a real Discord Webhook URL
 const masterWebhook = new WebhookClient({ url: WEBHOOK_URL });
-const WEBHOOK_ID = 'Webhooks_ID_Number_Here';
+const WEBHOOK_ID = 'Webhooks_ID_Number_Here'; //Replace with a real Discord Webhook ID
 
-const blacklistedChannels = ['Channel_ID_1', 'Channel_ID_2', 'Channel_ID_3'];
+const blacklistedChannels = ['Channel_ID_1', 'Channel_ID_2', 'Channel_ID_3']; //Replace with real Discord Channel ID's
 
 const pkCache = new Map(); // messageId -> { userId, usernameOverride, webhookMessageId }
 const pkFetchQueue = new Map();
