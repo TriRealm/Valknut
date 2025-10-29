@@ -38,7 +38,7 @@ Data is deleted automatically once it is no longer needed (e.g., after a ban exp
 
 The bot does not read OR acknowledge private Direct Messages sent to it & it never logs, shares, or forwards private Direct Messages.
 
-**Note:** Messages may be temporarily logged via Discord webhooks for moderation purposes, but these logs are not stored in Valknut’s databases.
+**Note:** Messages may be logged via Discord webhooks for moderation purposes by Valknut's Developers. These logs are stored in Discord and may persist until manually deleted. They are not stored in Valknut’s own databases.
 
 ---
 ## 4. Responsibilities
