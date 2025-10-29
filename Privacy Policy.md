@@ -18,7 +18,7 @@ The bot only temporarily processes technical information necessary for its featu
 - **Guild configuration data** (roles, channels, and settings chosen by server admins).
 - **Moderation metadata** (user IDs, timestamps for temporary bans, logs of actions taken).
 - **Temporary anti-spam checks** (recent messages used only for spam detection and deleted after expiry).
-- **Temporary message logs via Discord webhooks for moderation purposes** (these logs are not stored in Valknut’s databases).
+- **Temporary message logs via Discord webhooks for moderation purposes by Valknut's Developers** (these logs are stored on Discord and may persist until manually deleted but they are not stored in Valknut’s databases).
 
 The bot does not log or store private Direct Messages.
 
