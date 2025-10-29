@@ -4,11 +4,17 @@
 **Last Updated:** 29/10/2025
 
 ---
-## 1. Overview
+## 1. Overview and Acceptance of Terms
 
-Valknut is a moderation and utility bot for Discord. It provides tools for server administrators to manage their communities, including moderation actions, automated announcements, and customizable configurations.
-By inviting Valknut to your Discord server or utilizing it in any way, you agree to abide by the following Terms of Service.
-You also agree that you will not use this bot maliciously or any of its features in any way that we (The Dev Team) deem destructive to the Valknut Network.
+Valknut is a moderation and utility bot for Discord. It provides tools for server administrators to manage their communities, including moderation actions, automated systems, and customizable configurations.
+
+By inviting Valknut to your Discord server, being a member of a server that uses Valknut, or interacting with the bot in any way, you acknowledge and agree to abide by these Terms of Service and the accompanying Privacy Policy.
+
+**Server Owners and Administrators:** By inviting Valknut to your server, you confirm that you have the authority to do so and that you accept these Terms on behalf of your community. You are responsible for configuring and managing the bot within your server and ensuring that its use complies with Discord’s Terms of Service, Community Guidelines, and all applicable laws.
+
+**Users:** By being in a server where Valknut is active or by directly using its commands, you agree not to abuse, exploit, or misuse its features. You must not attempt to circumvent moderation systems, rate limits, or any restrictions implemented by Valknut or Discord.
+
+You also agree not to use Valknut or any of its features in any way that the Valknut Development Team deems malicious, exploitative, or destructive to the Valknut Network or Discord’s platform integrity.
 
 ---
 ## 2. Features
@@ -26,7 +32,7 @@ You also agree that you will not use this bot maliciously or any of its features
 ---
 ## 3. Data Usage
 
-Valknut does not store personal user data.
+**Valknut does not store personal user data.**
 
 The bot only stores:
 
@@ -43,9 +49,13 @@ The bot does not read OR acknowledge private Direct Messages sent to it & it nev
 ---
 ## 4. Responsibilities
 
-Server Owners/Admins: You are responsible for configuring the bot in your server.
+**Server Owners and Administrators:**
 
-Users: By interacting with the bot, you agree not to abuse its commands or attempt to circumvent its restrictions.
+By inviting Valknut to your server, you agree to these Terms of Service and are responsible for configuring and managing the bot within your community. You are also responsible for ensuring that your server’s use of Valknut complies with Discord’s Terms of Service, Community Guidelines, and all applicable laws.
+
+**Users:**
+
+By being a member of a Discord server that uses Valknut, or by directly interacting with the bot, you acknowledge and agree to these Terms of Service and the accompanying Privacy Policy. You agree not to abuse, exploit, or misuse its commands or features, and you must not attempt to circumvent moderation systems, rate limits, or any restrictions implemented by Valknut or Discord.
 
 ---
 ## 5. Limitations
@@ -59,7 +69,7 @@ Abuse of the bot or attempts to bypass Discord’s Terms of Service may result i
 ---
 ## 6. Compliance
 
-Terms of Service is subject to update as needs arise for any future implementation of new features.
+These Terms of Service may be updated periodically to reflect new features, policy changes, or compliance requirements.
 
 Valknut adheres to the [Discord Developer Terms of Service](https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service) and [Discord Guidelines](https://discord.com/guidelines).
 
