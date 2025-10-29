@@ -4,14 +4,14 @@
 **Last Updated:** 29/10/2025
 
 ---
-## Overview
+## 1. Overview
 
 Valknut is a moderation and utility bot for Discord. It provides tools for server administrators to manage their communities, including moderation actions, automated announcements, and customizable configurations.
 By inviting Valknut to your Discord server or utilizing it in any way, you agree to abide by the following Terms of Service.
 You also agree that you will not use this bot maliciously or any of its features in any way that we (The Dev Team) deem destructive to the Valknut Network.
 
 ---
-## Features
+## 2. Features
 
 - **Moderation:** ban, tempban (with expiry), global ban, and lockdown, purge user & global purge user.
 
@@ -24,7 +24,7 @@ You also agree that you will not use this bot maliciously or any of its features
 - **Logging:** optional message-logs, mod-logs for bans, tempbans, and actions taken by the bot.
 
 ---
-## Data Usage
+## 3. Data Usage
 
 Valknut does not store personal user data.
 
@@ -41,14 +41,14 @@ The bot does not read OR acknowledge private Direct Messages sent to it & it nev
 **Note:** Messages may be temporarily logged via Discord webhooks for moderation purposes, but these logs are not stored in Valknut’s databases.
 
 ---
-## Responsibilities
+## 4. Responsibilities
 
 Server Owners/Admins: You are responsible for configuring the bot in your server.
 
 Users: By interacting with the bot, you agree not to abuse its commands or attempt to circumvent its restrictions.
 
 ---
-## Limitations
+## 5. Limitations
 
 The bot is provided “as is” without warranties of any kind.
 
@@ -57,14 +57,14 @@ The bot may be unavailable during updates, restarts, or outages.
 Abuse of the bot or attempts to bypass Discord’s Terms of Service may result in removal from servers.
 
 ---
-## Compliance
+## 6. Compliance
 
 Terms of Service is subject to update as needs arise for any future implementation of new features.
 
 Valknut adheres to the [Discord Developer Terms of Service](https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service) and [Discord Guidelines](https://discord.com/guidelines).
 
 ---
-## Contact
+## 7. Contact
 
 If you have questions about this Terms of Service, contact the bot developers at:
 Email: trirealm.business@gmail.com
