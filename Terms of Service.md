@@ -1,6 +1,7 @@
 # Terms of Service for Valknut
 **Effective Date:** 18/09/2025
 **Last Updated:** 29/10/2025
+
 ---
 ## Overview
 
@@ -16,6 +17,7 @@ Announcements: Twitch live notifications with updated titles/games.
 Anti-Raid / Anti-Spam: message similarity detection and configurable spam prevention.
 Configuration: per-guild settings for moderation, spam filters, and announcements.
 Logging: optional mod-logs for bans, tempbans, and actions taken by the bot.
+
 ---
 ## Data Usage
 
@@ -31,22 +33,26 @@ Data is deleted automatically once it is no longer needed (e.g., after a ban exp
 The bot does not read OR acknowledge private Direct Messages sent to it & it never logs, shares, or forwards private Direct Messages.
 
 **Note:** Messages may be temporarily logged via Discord webhooks for moderation purposes, but these logs are not stored in Valknut’s databases.
+
 ---
 ## Responsibilities
 
 Server Owners/Admins: You are responsible for configuring the bot in your server.
 Users: By interacting with the bot, you agree not to abuse its commands or attempt to circumvent its restrictions.
+
 ---
 ## Limitations
 
 The bot is provided “as is” without warranties of any kind.
 The bot may be unavailable during updates, restarts, or outages.
 Abuse of the bot or attempts to bypass Discord’s Terms of Service may result in removal from servers.
+
 ---
 ## Compliance
 
 Terms of Service is subject to update as needs arise for any future implementation of new features.
 Valknut adheres to the Discord Developer Terms of Service and Discord Guidelines.
+
 ---
 ## Contact
 
