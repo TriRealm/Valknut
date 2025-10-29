@@ -18,15 +18,42 @@ const DELETE_BATCH_INTERVAL = 1500;
 const guildWebhookCache = new Map(); // guildId -> WebhookClient
 
 // === Mongo Helpers ===
+
+// These functions handle storing and removing messages from the MongoDB collection "messageStore".
+// The "messageStore" collection keeps track of messages per user for logging purposes.
+
+// Add a message entry to the store for a specific user
 async function addMessageToStore(userId, entry) {
+    // entry is an object representing the message metadata:
+    // {
+    //    messageId: '123456789012345678',   // Discord message ID
+    //    channelId: '987654321098765432',   // Channel ID where the message was sent
+    //    guildId: '112233445566778899'      // Guild/Server ID where the message was sent
+    // }
+    
     const col = await getCollection("messageStore");
-    await col.updateOne({ userId }, { $addToSet: { messages: entry } }, { upsert: true });
+
+    // $addToSet ensures the message is only stored once per user (prevents duplicates)
+    // upsert:true creates a new document for the user if it doesn't exist
+    await col.updateOne(
+        { userId },                     // Filter: document for this user
+        { $addToSet: { messages: entry } }, // Add the message entry to the "messages" array
+        { upsert: true }                // Create the document if it doesn't exist
+    );
 }
 
+// Remove a message from all users' message arrays
 async function removeMessageFromStore(messageId) {
     const col = await getCollection("messageStore");
-    await col.updateMany({}, { $pull: { messages: { messageId } } });
+
+    // $pull removes any message objects from the "messages" array that match the messageId
+    // This searches all documents because we don't know which user the message belongs to
+    await col.updateMany(
+        {},                              // Filter: all documents
+        { $pull: { messages: { messageId } } } // Remove any message object with this ID
+    );
 }
+
 
 // === Webhook Logger ===
 async function sendWebhookLog(type, message, userId, usernameOverride, webhookMessageId) {
