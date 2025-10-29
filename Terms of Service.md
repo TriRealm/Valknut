@@ -8,7 +8,7 @@
 
 Valknut is a moderation and utility bot for Discord. It provides tools for server administrators to manage their communities, including moderation actions, automated systems, and customizable configurations.
 
-By inviting Valknut to your Discord server, being a member of a server that uses Valknut, or interacting with the bot in any way, you acknowledge and agree to abide by these Terms of Service and the accompanying [Privacy Policy](https://github.com/TriRealm/Valknut/edit/main/Privacy%20Policy.md).
+By inviting Valknut to your Discord server, being a member of a server that uses Valknut, or interacting with the bot in any way, you acknowledge that you have read, understood, and agree to abide by these Terms of Service and the accompanying [Privacy Policy](https://github.com/TriRealm/Valknut/edit/main/Privacy%20Policy.md).
 
 **Server Owners and Administrators:** By inviting Valknut to your server, you confirm that you have the authority to do so and that you accept these Terms on behalf of your community. You are responsible for configuring and managing the bot within your server and ensuring that its use complies with Discord’s Terms of Service, Community Guidelines, and all applicable laws.
 
