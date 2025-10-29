@@ -1,52 +1,54 @@
-📜 Privacy Policy for Valknut
+#📜 Privacy Policy for Valknut
 
-Effective Date: 18/09/2025
-Last Updated: 18/09/2025
+**Effective Date:** 18/09/2025
 
-1. Overview
+**Last Updated:** 29/10/2025
 
+---
+# 1. Overview
 Valknut is a Discord moderation and utility bot. This Privacy Policy explains what information the bot collects, how it is used, and how it is protected.
 
-2. Data Collection
+---
 
+# 2. Data Collection
 Valknut does not collect or store personal data from users.
+
 The bot only temporarily processes technical information necessary for its features:
 
-Guild configuration data (roles, channels, and settings chosen by server admins).
-
-Moderation metadata (user IDs, timestamps for temporary bans, logs of actions taken).
-
-Temporary anti-spam checks (recent messages used only for spam detection and deleted after expiry).
+- **Guild configuration data** (roles, channels, and settings chosen by server admins).
+- **Moderation metadata** (user IDs, timestamps for temporary bans, logs of actions taken).
+- **Temporary anti-spam checks** (recent messages used only for spam detection and deleted after expiry).
+- **Temporary message logs via Discord webhooks for moderation purposes** (these logs are not stored in Valknut’s databases).
 
 The bot does not log or store private Direct Messages.
 
-3. Data Retention
-
+---
+# 3. Data Retention
 Technical data (e.g., tempban expiry times) is automatically deleted once it is no longer required.
 
 Configuration data is kept only as long as the bot remains in a server.
 
 No long-term storage of user messages or private information occurs.
 
-4. Data Sharing
-
+---
+# 4. Data Sharing
 Valknut does not share, sell, or disclose any data with third parties.
 
-5. User Rights
-
+---
+# 5. User Rights
 Since Valknut does not store personal data, no user action is required to request data deletion. If configuration data should be removed, simply remove the bot from your server, which automatically deletes all stored settings.
 
-6. Compliance
-
+---
+# 6. Compliance
 This Privacy Policy is designed to comply with:
 
-Discord Developer Terms of Service
+[Discord Developer Terms of Service](https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service)
 
-Discord Community Guidelines
+[Discord Community Guidelines](https://discord.com/guidelines)
 
 Privacy Policy is subject to update as needs arise for any future implementation of new features.
 
-7. Contact
-
+---
+# 7. Contact
 For questions about this Privacy Policy, contact the bot developers at:
 Email: trirealm.business@gmail.com
