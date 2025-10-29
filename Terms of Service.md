@@ -1,5 +1,3 @@
-Here’s your updated Terms of Service with only the Data Usage section clarified to reflect that messages may be temporarily logged via webhooks, without changing any other part:
-
 Terms of Service for Valknut
 Effective Date: 18/09/2025
 Last Updated: 29/10/2025
