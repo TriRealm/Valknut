@@ -1,4 +1,4 @@
-#📜 Privacy Policy for Valknut
+# 📜 Privacy Policy for Valknut
 
 **Effective Date:** 18/09/2025
 
