@@ -110,13 +110,20 @@ async function sendWebhookLog(type, message, userId, usernameOverride, webhookMe
         await masterWebhook.send(embedData);
     }
 
-    // --- Guild-specific webhook ---
+        // --- Guild-specific webhook ---
     if (message.guild) {
-        try {
-            const guildConfigsCol = await getCollection('guildConfigs');
-            const guildConfig = await guildConfigsCol.findOne({ guildId: message.guild.id });
+    try {
+        const guildConfigsCol = await getCollection('guildConfigs');
+        const guildConfig = await guildConfigsCol.findOne({ guildId: message.guild.id });
 
-            if (guildConfig?.messageLog) {
+        if (guildConfig?.messageLog) {
+            // Check event-specific opt-ins
+            const skipGuildWebhook =
+                (type === 'Stored' && guildConfig.sendCreate === false) ||
+                (type === 'Edited' && guildConfig.sendUpdate === false) ||
+                (type === 'Deleted' && guildConfig.sendDelete === false);
+
+            if (!skipGuildWebhook) {
                 let guildWebhook = guildWebhookCache.get(message.guild.id);
 
                 if (!guildWebhook) {
@@ -129,10 +136,11 @@ async function sendWebhookLog(type, message, userId, usernameOverride, webhookMe
 
                 await guildWebhook.send(embedData);
             }
-        } catch (err) {
-            console.warn(`[Guild Webhook] Failed for guild ${message.guild?.id}:`, err.message);
         }
+    } catch (err) {
+        console.warn(`[Guild Webhook] Failed for guild ${message.guild?.id}:`, err.message);
     }
+}
 
     return webhookMessageId || null;
 }
