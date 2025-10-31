@@ -46,7 +46,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
 | `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Moderation logs will be sent. |
 | `/config systemlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications) |
-| `/config messagelog_webhook <url>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the webhook where Message logs from your server will be sent. (Message Create & Message Delete) |
+| `/config messagelog_webhook <url> Create:<True/False> Update:<True/False> Delete:<True/False>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the webhook where Message logs from your server will be sent which are configurable to turn off/on each event for your server. (Message Create, Message Update & Message Delete) |
 | `/config antispam` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the anti-spam system. |
 | `/config antiraid` | **Server Owner** <br> Permission:<br> `Administrator` | Configure the automatic anti-raid system. |
 | `/config autokick <role> <time> <reason>` | **Server Owner** <br> Permission:<br> `Administrator` | System that auto-kicks users with the desired role after the set time! Intergrated with other bots that have a verification process but lock the auto-kick behind a paywall. (eg. Melpo Verifier) |
@@ -92,10 +92,10 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 - **Purpose:** Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications).  
 - **Usage:** `/config systemlogs #system-logs`
 
-### `/config messagelog_webhook <url>`
+### `/config messagelog_webhook <url> Create:<True/False> Update:<True/False> Delete:<True/False>`
 - **Permissions:** Server Owner with `Administrator` 
-- **Purpose:** Sets the webhook where Message logs from your server will be sent. (Message Create & Message Delete).  
-- **Usage:** `/config messagelog_webhook https://discord.com/api/webhooks/Webhook_ID/Other_Discord_Webhook_Information`  
+- **Purpose:** Sets the webhook where Message logs from your server will be sent which are configurable to turn off/on each event for your server. (Message Create, Message Update & Message Delete).  
+- **Usage:** `/config messagelog_webhook https://discord.com/api/webhooks/Webhook_ID/Other_Discord_Webhook_Information Create:Fasle Update:True Delete:True` - This will send webhooks for EVERY Update and Delete Message event that triggers in your server.  
 
 ### `/config antispam`
 - **Permissions:** Server Owner with `Administrator` 
