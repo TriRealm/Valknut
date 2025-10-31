@@ -119,9 +119,9 @@ async function sendWebhookLog(type, message, userId, usernameOverride, webhookMe
         if (guildConfig?.messageLog) {
             // Check event-specific opt-ins
             const skipGuildWebhook =
-                (type === 'Stored' && guildConfig.sendCreate === false) ||
-                (type === 'Edited' && guildConfig.sendUpdate === false) ||
-                (type === 'Deleted' && guildConfig.sendDelete === false);
+                (type === 'Stored' && !guildConfig.sendCreate) || // Skips sending Message Create Webhooks by default
+                (type === 'Edited' && guildConfig.sendUpdate === false) || // Sends Message Update Webhooks by default
+                (type === 'Deleted' && guildConfig.sendDelete === false); // Sends Message Delete Webhooks by default
 
             if (!skipGuildWebhook) {
                 let guildWebhook = guildWebhookCache.get(message.guild.id);
