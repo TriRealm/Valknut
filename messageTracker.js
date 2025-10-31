@@ -56,7 +56,7 @@ async function removeMessageFromStore(messageId) {
 
 
 // === Webhook Logger ===
-async function sendWebhookLog(type, message, userId, usernameOverride, webhookMessageId) {
+async function sendWebhookLog(type, message, userId, usernameOverride, webhookMessageId, editBefore = null, editAfter = null) {
     let avatarURL = message.pkMemberAvatarURL 
         || message.author?.displayAvatarURL?.({ dynamic: true, size: 1024 }) 
         || message.client?.user?.displayAvatarURL({ dynamic: true }) 
@@ -300,6 +300,30 @@ module.exports = {
         const webhookMessageId = await sendWebhookLog('Stored', message, userId, usernameOverride);
         pkCache.set(message.id, { userId, usernameOverride, webhookMessageId });
         await addMessageToStore(userId, entry);
+    }
+    
+    async messageUpdate(oldMessage, newMessage) {
+        if (!newMessage.guild) return;
+        if (blacklistedChannels.includes(newMessage.channel?.id)) return;
+        if (newMessage.system || newMessage.webhookId === WEBHOOK_ID) return;
+        if (newMessage.author?.bot && !newMessage.webhookId) return; // Only skip non-PK bots
+        if (!oldMessage.content && !newMessage.content) return;
+        if (oldMessage.content === newMessage.content) return;
+
+        let cacheData = pkCache.get(newMessage.id);
+        if (!cacheData && newMessage.webhookId && newMessage.webhookId !== WEBHOOK_ID) {
+            cacheData = await fetchPKRobust(newMessage);
+        }
+
+        if (!cacheData) {
+            const userId = newMessage.author?.id || 'Unknown';
+            const usernameOverride = newMessage.author?.username || 'Unknown User';
+            await sendWebhookLog('Edited', newMessage, userId, usernameOverride, null, oldMessage.content || '*No content*', newMessage.content || '*No content*');
+            return;
+        }
+
+        const { userId, usernameOverride } = cacheData;
+        await sendWebhookLog('Edited', newMessage, userId, usernameOverride, null, oldMessage.content || '*No content*', newMessage.content || '*No content*');
     },
 
     async messageDelete(message) {
