@@ -43,6 +43,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 |--------------------|------------|-------------|
 | `/applyforglobal` | **Server Owner** <br> Permission:<br> `Administrator` | Apply to get your server enabled for global commands (Global Ban/UnBan & Purge). |
 | `/catchupbans <all/global/18plus>` | **Server Owner** <br> Permission:<br> `Administrator` | Applies all Global Bans from the bots prior logs with the desired filter they set. |
+| `/config botappearance <avatar> <avatar_url> <banner> <banner_url> <reset>` | **Server Owner** <br> Permission:<br> `Administrator` | Allows you to customise the appearance of the bot by uploading files or using links for your server. |
 | `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
 | `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Moderation logs will be sent. |
 | `/config systemlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications) |
@@ -74,6 +75,17 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
   - `all` – Runs **ALL** Global Bans the bot has previously ran to catch the server up with prior bans.  
   - `global` – Runs Only Global Bans Where the **18plus flag is `false`**.  
   - `18plus` – Runs Only Global Bans Where the **18plus flag is `true`**.
+
+ ### `/config botappearance <avatar> <avatar_url> <banner> <banner_url> <reset>`
+- **Permissions:** Server Owner with `Administrator`  
+- Allows you to customise the appearance of the bot by uploading files or using links for your server.
+- **Usage:** `/config botappearance avatar_url:https://pngimg.com/d/discord_PNG18.png banner_url:https://hypeserv.com/file/discord_banner.webp`  - Sets the bots avatar and banner to images those links go to.
+- **Options:**
+  - `avatar` – Prompts you to attach a file to set as the bots new Avatar.  
+  - `avatar_url` – Prompts you to input a url of an image to set as the bots new Avatar. 
+  - `banner` – Prompts you to attach a file to set as the bots new Banner.  
+  - `banner_url` – Prompts you to input a url of an image to set as the bots new Banner.
+  - `reset` – if value is set to `true` it will reset the bots Avatar and Banner to the `GLOBAL`/`Default` ones.  
   
 
 ### `/config raidlogs <channel>`
