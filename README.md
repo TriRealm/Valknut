@@ -6,7 +6,7 @@
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
 [![Banned](https://img.shields.io/badge/Banned%3F-Appeal_Here-FF4D00)](https://discord.gg/EvYFUSpbVz)
 
-![Users](https://img.shields.io/badge/Banned%20Users-31-FA003F)
+![Users](https://img.shields.io/badge/Banned%20Users-33-FA003F)
 ![Users2](https://img.shields.io/badge/Blocked%20Users-0-FA003F)
 ![Guilds](https://img.shields.io/badge/Blocked%20Guilds-0-FA003F)
 
