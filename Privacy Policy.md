@@ -13,7 +13,7 @@ By using Valknut, you acknowledge that you have read, understood, and agree to t
 ---
 # 2. Data Collection
 
-**Valknut does not collect, sell, or permanently store any personal data from users.**
+**Valknut does not collect, sell, or permanently store personal data.**
 
 The bot only processes limited technical information necessary to provide its functionality, such as:
 
@@ -25,10 +25,19 @@ The bot only processes limited technical information necessary to provide its fu
 
 **Temporary moderation webhooks:** Valknut may send message logs via Discord webhooks for moderation purposes. These remain on Discord’s servers until deletion and are not stored by Valknut’s own systems.
 
-**Valknut does not log or access private Direct Messages between users or to the bot itself.**
+**Ticket Data:** ticket messages and attachments are stored only while a ticket is open, deleted immediately upon closure after a transcript is delivered to the relevant server.
+
+**Verification Data:** messages sent by users through Valknut’s verification system via DM are temporarily stored to facilitate moderation review and approval. Once the verification process is completed or expired, all related data is deleted from Valknut’s systems.
+
+**Other DMs:**
+Valknut does not read, log, or process any Direct Messages that are not part of the verification system.
 
 ---
 # 3. Data Retention
+Verification data is retained only until the review process concludes.
+
+Ticket data is retained only while a ticket remains open.
+
 Technical data (e.g., tempban expiry times) is automatically deleted once it is no longer required.
 
 Configuration data is kept only as long as the bot remains in a server.
@@ -38,6 +47,8 @@ No long-term storage of user messages or private information occurs.
 ---
 # 4. Data Sharing
 Valknut does not share, sell, or disclose any data with third parties.
+
+Verification and ticket data are used solely for server moderation purposes within the same guild and is not accessible to other guilds or the bot developers.
 
 ---
 # 5. User Rights
