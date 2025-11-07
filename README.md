@@ -331,10 +331,7 @@ Displays bot credits and developer information.
 #### Details:
 - Checks role hierarchy:
   - You cannot modify roles equal to or higher than your highest role.
-  - The bot cannot modify roles equal to or higher than its own highest role.
 - Responds with an embed confirming the action (green for added, red for removed).
-- All responses are ephemeral when errors occur (to prevent clutter).
-- Logs are not automatically created (use `/config` log systems if you want these recorded).
 
 #### Example Usage:
 - ✅ `/role action:add user:@User role:@Verified`
