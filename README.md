@@ -58,6 +58,20 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/config roleprotect delete <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Remove a role from the protected roles list. |
 | `/config roleprotect list` | **Server Owner** <br> Permission:<br> `Administrator` | List all protected roles in this guild. |
 | `/config mute enabled:<true/false> <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Enables/Disables the bot to manage and configure channels for the Mute/Timeout System. |
+| `/ticket <setup/panel>` | **Moderator/Staff** <br> Permission:<br> `Manage Guild` | Configure and send ticket system panels for support channels. |
+| `/config verify setroles <verified_role> <unverified_role>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the verified and unverified roles for the server. |
+| `/config verify setchannel <review_channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the channel where moderators review verification submissions. |
+| `/config verify setquestions <questions>` | **Server Owner** <br> Permission:<br> `Administrator` | Configure up to 10 verification questions. Use comma-separated format. Multiple choice: `Q|option1;option2;option3`. |
+| `/config verify view` | **Server Owner** <br> Permission:<br> `Administrator` | View the current verification configuration. |
+| `/config verify sendbutton <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Send the verification “Verify” button embed to a channel. |
+| `/config verify setstaff <staff_role>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the staff role to ping when a verification is submitted. |
+| `/config logging user <webhook_url> <avatar_update> <role_update>` | **Server Owner** <br> Permission:<br> `Administrator` | Configure user logging (avatar/role updates) via a webhook. |
+| `/config logging member <join_enabled> <join_channel> <leave_enabled> <leave_channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Configure member join/leave logging. Enable/disable events and set channels. |
+| `/config logging voice <enabled> <channel> <webhook>` | **Server Owner** <br> Permission:<br> `Administrator` | Configure voice channel logging. Can send to a channel or webhook. |
+| `/ticket setup <channel> <category> <support_role> <log_channel> <panel_id>` | **Moderator/Staff** <br> Permission:<br> `Manage Guild` | Configure the ticket system for this guild, setting up where tickets are created and logged. |
+| `/ticket panel <panel_id>` | **Moderator/Staff** <br> Permission:<br> `Manage Guild` | Sends the ticket creation panel embed with a button to open new tickets. |
+
+
 
 ---
 
@@ -184,6 +198,77 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
   - `True` – Turns **ON** the system and Makes the bot go through all `CHANNELS` and applies the configured `Mute` role from speaking/typing in channels **(DOESN'T AFFECT VIEWING PERMISSIONS - ALL INHERITED FROM CURRENT ROLES)**.  
   - `False` – Turns **OFF** the system.  
   - `Role` – The desired Role you want the bot to manage and apply to channels for the Mute/Timeout.
+ 
+### `/ticket <setup/panel>`
+- **Permissions:** Moderator/Staff with `Manage Guild`  
+- **Purpose:** Full support ticket system configuration and deployment.  
+
+#### Subcommands:
+- **`setup`** → Configure where the ticket system operates.
+  - `channel` → Channel where the “Create Ticket” embed is posted.
+  - `category` → Category for ticket channels.
+  - `support_role` → Role that can see and manage tickets.
+  - `log_channel` → Channel to send closed ticket logs.
+  - `panel_id` *(optional)* → Identifier for different ticket panels (e.g., “billing”, “support”).  
+  - ✅ Example:  
+    ```
+    /ticket setup channel:#tickets category:#open-tickets support_role:@Support log_channel:#ticket-logs panel_id:main
+    ```
+- **`panel`** → Sends the configured “Create Ticket” panel embed to the chosen channel.
+  - ✅ Example: `/ticket panel main`
+
+ 
+### `/ticket setup <channel> <category> <support_role> <log_channel> <panel_id>`
+- **Permissions:** Moderator/Staff with `Manage Guild`  
+- **Purpose:** Configures the ticket system for the guild by saving where to post the panel, which category tickets open under, who manages them, and where to log closed tickets.  
+- **Usage:**  
+  `/ticket setup channel:#ticket-panel category:#tickets support_role:@Support log_channel:#ticket-logs panel_id:main`  
+- **Details:**
+  - `channel` → The channel where the “Create Ticket” panel will be posted.  
+  - `category` → The category where new ticket channels will appear.  
+  - `support_role` → The role allowed to view and manage tickets.  
+  - `log_channel` → The channel where closed tickets are logged.  
+  - `panel_id` *(optional)* → Identifier for multi-panel setups (default = `main`).  
+
+### `/ticket panel <panel_id>`
+- **Permissions:** Moderator/Staff with `Manage Guild`  
+- **Purpose:** Sends the saved “Create Ticket” panel to the configured channel.  
+- **Usage:** `/ticket panel main`  
+- **Behavior:** Posts an embed with a “Create Ticket” button that opens a private support channel automatically.
+
+### `/config verify` Subcommand Details
+- **Permissions:** Server Owner with `Administrator` 
+- **`setroles`** – Assign verified and unverified roles automatically on verification.
+- **`setchannel`** – Moderators review submissions here. Embed notifications are sent to this channel.
+- **`setquestions`** – Configure questions sent to users in DMs. Supports multiple-choice.
+- **`view`** – Displays current settings for roles, review channel, staff ping, and questions.
+- **`sendbutton`** – Sends the verification “Verify” button embed to a chosen channel.
+- **`setstaff`** – Set a staff role that will be pinged when new verification submissions occur.
+
+### `/config logging` Subcommand Details
+- **Permissions:** Server Owner with `Administrator`
+#### User Logging
+- Logs avatar and role updates to a webhook.
+- Options:
+  - `webhook_url` → Webhook to receive logs.
+  - `avatar_update` → Enable avatar update logging.
+  - `role_update` → Enable role update logging.
+
+#### Member Logging
+- Logs member joins and leaves.
+- Options:
+  - `join_enabled` → Enable join logs.
+  - `join_channel` → Channel for join logs.
+  - `leave_enabled` → Enable leave logs.
+  - `leave_channel` → Channel for leave logs.
+
+#### Voice Logging
+- Logs voice channel activity (joins, leaves, mutes, etc.).
+- Options:
+  - `enabled` → Enable or disable logging.
+  - `channel` → Text channel to post logs.
+  - `webhook` → Webhook to send logs instead of a channel.
+
 ---
 
 ## ⚔️ Valknut General/Moderation Commands Overview
@@ -197,6 +282,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/guildscan <LIMIT>`                        | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Scans messages across every channel in your server up to the specified limit (max 100,000). <br>Stores only `User ID`, `Channel ID`, `Message ID`, and `Guild ID`. <br>No Message Content is ever Stored. |
 | `/purgeuser <USER>`                         | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **in your server**. |
 | `/globalpurgeuser <USER>`                   | **Moderator/Staff** <br> Permission:<br> `Manage Messages` | Deletes every message logged by Valknut from the target user **across all servers**. |
+| `/role <add/remove>` | **Moderator/Staff** <br> Permission:<br> `Manage Roles` | Add or remove a role from a user, respecting Discord role hierarchy limits. |
 | `/ban <USER> <REASON>`                      | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally bans a user in your server. Requires tagging the user and providing a reason. |
 | `/tempban <USER> <DURATION> <REASON>`                      | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally & Temporarily bans a user in your server. Requires tagging the user and providing a reason. |
 | `/unban <USER> <REASON>`                    | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Locally un-bans a user in your server. Requires tagging the user and providing a reason. |
@@ -232,6 +318,27 @@ Displays bot credits and developer information.
 - Deletes every message logged by Valknut from the target user.  
 - `/purgeuser` → in your server only.  
 - `/globalpurgeuser` → across all servers Valknut is in.
+
+### `/role <add/remove>`
+- **Permissions:** Moderator/Staff with `Manage Roles`
+- **Purpose:** Allows moderators to manually assign or remove roles from members within the guild.
+
+#### Options:
+- **`action`** → Choose whether to `add` or `remove` a role.
+- **`user`** → The member whose roles you want to modify.
+- **`role`** → The specific role to add or remove.
+
+#### Details:
+- Checks role hierarchy:
+  - You cannot modify roles equal to or higher than your highest role.
+  - The bot cannot modify roles equal to or higher than its own highest role.
+- Responds with an embed confirming the action (green for added, red for removed).
+- All responses are ephemeral when errors occur (to prevent clutter).
+- Logs are not automatically created (use `/config` log systems if you want these recorded).
+
+#### Example Usage:
+- ✅ `/role action:add user:@User role:@Verified`
+- ✅ `/role action:remove user:@User role:@Muted`
 
 ### `/ban <USER> <REASON>` / `/unban <USER> <REASON>` / `/kick <USER> <REASON>`
 - **Permissions:** Moderator/Staff with `Ban Members`  
