@@ -1,11 +1,13 @@
 # Valknut 🛡️
 
+[![AddValk](https://img.shields.io/badge/Add%20Valkut%20Now-8A2BE2)](https://discord.com/oauth2/authorize?client_id=1373066520397348864)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1383009209196613675?color=7289DA&label=Dev%20Discord)](https://discord.gg/EvYFUSpbVz)
 [![Kofi](https://img.shields.io/badge/Kofi-Support_the_Dev-8755D6)](https://ko-fi.com/trirealm)
-[![Banned](https://img.shields.io/badge/Banned%3F-Appeal_Here-FF4D00)](https://discord.gg/EvYFUSpbVz)
 
+
+[![Banned](https://img.shields.io/badge/Banned%3F-Appeal_Here-FF4D00)](https://discord.gg/EvYFUSpbVz)
 ![Users](https://img.shields.io/badge/Banned%20Users-33-FA003F)
 ![Users2](https://img.shields.io/badge/Blocked%20Users-0-FA003F)
 ![Guilds](https://img.shields.io/badge/Blocked%20Guilds-0-FA003F)
