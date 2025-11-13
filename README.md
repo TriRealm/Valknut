@@ -1,6 +1,6 @@
 # Valknut 🛡️
 
-[![AddValk](https://img.shields.io/badge/Add%20Valknut%20Here-11%20Servers-7289DA)](https://discord.com/oauth2/authorize?client_id=1373066520397348864)
+[![AddValk](https://img.shields.io/badge/Invite%20Valknut-11%20Servers-7289DA)](https://discord.com/oauth2/authorize?client_id=1373066520397348864)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/TriRealm/Valknut/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1383009209196613675?color=00FF7F&label=Support%20Server)](https://discord.gg/EvYFUSpbVz)
