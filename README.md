@@ -294,7 +294,8 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 | `/globalban <USER> <REASON> <True/False>`   | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally bans a user in all servers Valknut is in. True = bans only in 18+ registered servers; False = bans in all servers. |
 | `/globalunban <USER> <REASON> <True/False>` | **Moderator/Staff** <br> Permission:<br> `Ban Members`     | Globally un-bans a user in all servers Valknut is in. True = un-bans in 18+ registered servers only; False = un-bans in all servers. |
 | `/raidmode <True/False> <DURATION>` | **Moderator/Staff** <br> Permission:<br> `Kick Members`     | Enables Raid-Mode on your server where everyone who attempts to join while active will be kicked. <br>Will Disable automatically after time has elapsed or with a `false` value in the command. |
-| `/twitch <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
+| `/twitch ADD/REMOVE/LIST <USERNAME> <CHANNEL> <MESSAGE>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get livestream notifications from the desired user in a set channel with a custom message. |
+| `/youtube ADD/REMOVE/LIST <CHANNEL ID> <CHANNEL> <MESSAGE> <TYPE: VIDEO/LIVE/SHORTS`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to get notifcations from the desired user on youtube in a set channel with a custom message. |
 | `/reactionrole <create/edit/remove/list/addrole/removerole> <messageid> <emoji> <role> <displayname> <maxroles> <requiredrole> <excludedrole>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create and manage roles that users can assign by reacting to a message dynamically. |
 | `/poll <title> <role> <option1> <option2> <option3> <option4> <option5> <option6> <option7> <option8> <option9> <option10>`   | **Moderator/Staff** <br> Permission:<br> `Manage Messages`     | Allows you to create polls and Optionally mention users for notifications and allow to react to the options. |
 | `/mute <user> <reason> <duartion>`   | **Moderator/Staff** <br> Permission:<br> `Time Out Members/Moderate Members`     | Allows you to mute/timeout users indefinitely or for a set amount of time IF SET. |
@@ -377,6 +378,14 @@ Displays bot credits and developer information.
 - Live Notifications from Twitch users in Channels with Custom Messages.  
   - `ADD` → Add a new Twitch stream to get notificaions/embed for.
   - `REMOVE` → Remove a Twitch stream you are already getting notified for.
+  - `EDIT` → Edit the notification settings of a channel.
+  - `LIST` → List all followed channels and their settings.
+
+### `/youtube <ADD/REMOVE/EDIT/LIST> <USERNAME> <CHANNEL> <MESSAGE> <TYPE>`
+- **Permissions:** Moderator/Staff with `Manage Messages`  
+- Live Notifications from Twitch users in Channels with Custom Messages.  
+  - `ADD` → Add a new YouTube Channel to get notificaions/embed for.
+  - `REMOVE` → Remove a YouTube Channel you are already getting notified for.
   - `EDIT` → Edit the notification settings of a channel.
   - `LIST` → List all followed channels and their settings.
 
