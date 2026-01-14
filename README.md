@@ -30,19 +30,19 @@ Click the "Invite to Discord" button above OR find us [HERE](https://top.gg/bot/
 ## 🌟 Key Features
 
 - **One Command, Gone From All!**  
-  Instantly remove a user from all mutual servers to prevent ban evasion.
+  One command removes dangerous users from all Global Enabled Servers.
 
 - **Trusted Distribution**  
   Shared only with a controlled group of trusted creators to maintain security and integrity.
 
 - **18+ Filtering**  
-  Configurable filters to handle adult content or restrict actions to 18+ communities.
+  Configurable filters to help mature content creators limit moderation actions to 18+ communties only.
 
 - **Owner & Moderator Protections**  
-  Built-in safeguards prevent misuse, including attempts to ban server owners or moderators.
+  Completely integrated safeguards to prevent misuse, including attempts to ban Owners or Moderators.
 
 - **Community Safety**  
-  Designed to keep servers safe while ensuring fair control over moderation actions.
+  Designed to keep servers and users safe, while ensuring fair, and easily documented, moderation actions.
 
 
 
