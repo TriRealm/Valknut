@@ -23,7 +23,7 @@ Originally designed for a group of closely-knit communities, Valknut ensures pro
 
 ## 📝 How to Install?
 
-Click the "Invite to Discord" button above OR find us (HERE)[https://top.gg/bot/1373066520397348864]
+Click the "Invite to Discord" button above OR find us [HERE(https://top.gg/bot/1373066520397348864)]
 
 ---
 
@@ -43,6 +43,8 @@ Click the "Invite to Discord" button above OR find us (HERE)[https://top.gg/bot/
 
 - **Community Safety**  
   Designed to keep servers safe while ensuring fair control over moderation actions.
+
+-
 
 *Application required for access to global commands, see Configuration Overview below*
 
