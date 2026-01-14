@@ -44,8 +44,7 @@ Click the "Invite to Discord" button above OR find us [HERE](https://top.gg/bot/
 - **Community Safety**  
   Designed to keep servers safe while ensuring fair control over moderation actions.
 
---
-
+---
 *Application required for access to global commands, see Configuration Overview below*
 
 ---
