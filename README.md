@@ -114,7 +114,18 @@ Click the "Invite to Discord" button above OR find us [HERE](https://top.gg/bot/
   - `avatar_url` – Prompts you to input a url of an image to set as the bots new Avatar. 
   - `banner` – Prompts you to attach a file to set as the bots new Banner.  
   - `banner_url` – Prompts you to input a url of an image to set as the bots new Banner.
-  - `reset` – if value is set to `true` it will reset the bots Avatar and Banner to the `GLOBAL`/`Default` ones.  
+  - `reset` – if value is set to `true` it will reset the bots Avatar and Banner to the `GLOBAL`/`Default` ones.
+ 
+ ### `/config autojoinrole <set/add/view/remove/clear>`
+- **Permissions:** Server Owner with `Administrator`  
+- Allows you set roles applied to users when they first join your server..
+- **Usage:** `/config autojoinrole @Unverifies`  - Sets @Unverified to be given to users when they join your server.
+- **Options:**
+  - `set` – Sets the initial role to be applied.  
+  - `add` – Add extra roles you want to be applied to new users. 
+  - `view` – View a list of the roles that will be applied.  
+  - `remove` – Removes the selected role from the list to no longer be applied.
+  - `clear` – clear the configured options entirely for the `autojoinrole` settings.  
   
 
 ### `/config raidlogs <channel>`
