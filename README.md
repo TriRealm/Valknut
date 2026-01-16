@@ -57,6 +57,7 @@ Click the "Invite to Discord" button above OR find us [HERE](https://top.gg/bot/
 | `/applyforglobal` | **Server Owner** <br> Permission:<br> `Administrator` | Apply to get your server enabled for global commands (Global Ban/UnBan & Purge). |
 | `/catchupbans <all/global/18plus>` | **Server Owner** <br> Permission:<br> `Administrator` | Applies all Global Bans from the bots prior logs with the desired filter they set. |
 | `/config botappearance <avatar> <avatar_url> <banner> <banner_url> <reset>` | **Server Owner** <br> Permission:<br> `Administrator` | Allows you to customise the appearance of the bot by uploading files or using links for your server. |
+| `/config autojoinrole <set/add/view/remove/clear>` | **Server Owner** <br> Permission:<br> `Administrator` | Allows you set roles applied to users when they first join your server. |
 | `/config raidlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Raid Mode logs will be sent. |
 | `/config modlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where Moderation logs will be sent. |
 | `/config systemlogs <channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Sets the channel where System logs will be sent. (Maintance, Downtime, Changelogs and Documentation Update Notifications) |
@@ -73,6 +74,7 @@ Click the "Invite to Discord" button above OR find us [HERE](https://top.gg/bot/
 | `/config mute enabled:<true/false> <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Enables/Disables the bot to manage and configure channels for the Mute/Timeout System. |
 | `/ticket <setup/panel>` | **Moderator/Staff** <br> Permission:<br> `Manage Guild` | Configure and send ticket system panels for support channels. |
 | `/config verify setroles <verified_role> <unverified_role>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the verified and unverified roles for the server. |
+| `/config verify addrole <role>` | **Server Owner** <br> Permission:<br> `Administrator` | Set additional roles to applied when a user is verified. |
 | `/config verify setchannel <review_channel>` | **Server Owner** <br> Permission:<br> `Administrator` | Set the channel where moderators review verification submissions. |
 | `/config verify setquestions <questions>` | **Server Owner** <br> Permission:<br> `Administrator` | Configure up to 10 verification questions. Use comma-separated format. Multiple choice: `Q|option1;option2;option3`. |
 | `/config verify view` | **Server Owner** <br> Permission:<br> `Administrator` | View the current verification configuration. |
