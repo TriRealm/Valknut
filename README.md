@@ -8,8 +8,8 @@
 
 
 
-![Users](https://img.shields.io/badge/Banned%20Users-52-FA003F)
-![Users2](https://img.shields.io/badge/Blocked%20Users-1-FA003F)
+![Users](https://img.shields.io/badge/Banned%20Users-55-FA003F)
+![Users2](https://img.shields.io/badge/Blocked%20Users-2-FA003F)
 ![Guilds](https://img.shields.io/badge/Blocked%20Guilds-0-FA003F)
 [![Banned](https://img.shields.io/badge/Banned%3F-Appeal_Here-FF4D00)](https://discord.gg/EvYFUSpbVz)
 
